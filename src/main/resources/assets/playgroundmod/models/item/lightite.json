@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "playgroundmod:item/tigerspirit"
+    "layer0": "playgroundmod:item/lightite"
   }
 }

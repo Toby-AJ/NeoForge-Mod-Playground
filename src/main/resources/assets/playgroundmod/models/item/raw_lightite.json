@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "playgroundmod:item/rawspirit"
+    "layer0": "playgroundmod:item/raw_lightite"
   }
 }
