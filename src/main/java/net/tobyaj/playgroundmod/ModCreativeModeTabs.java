@@ -26,6 +26,10 @@ public class ModCreativeModeTabs
                       output.accept(ModItems.LIGHTITE);
                       output.accept(ModItems.RAW_SPIRIT);
                       output.accept(ModItems.TIGER_SPIRIT);
+                      output.accept(ModItems.EAGLE_SPIRIT);
+                      output.accept(ModItems.SHARK_SPIRIT);
+                      output.accept(ModItems.BEAR_SPIRIT);
+                      output.accept(ModItems.SNAKE_SPIRIT);
                     }).build());
 
     public static void register(IEventBus eventBus)
