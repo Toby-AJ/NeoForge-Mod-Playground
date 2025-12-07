@@ -25,6 +25,10 @@ public class ModBlocks
 
     public static final DeferredBlock<Block> LIGHTITE_BLOCK = registerBlock("lightite_block",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> REFINED_LIGHTITE_BLOCK = registerBlock("refined_lightite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CHAIN)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)

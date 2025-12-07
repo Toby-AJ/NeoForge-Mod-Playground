@@ -22,8 +22,10 @@ public class ModCreativeModeTabs
                     .displayItems((parameters, output) -> {
                       output.accept(ModBlocks.LIGHTITE_ORE);
                       output.accept(ModBlocks.LIGHTITE_BLOCK);
+                      output.accept(ModBlocks.REFINED_LIGHTITE_BLOCK);
                       output.accept(ModItems.RAW_LIGHTITE);
                       output.accept(ModItems.LIGHTITE);
+                      output.accept(ModItems.REFINED_LIGHTITE);
                       output.accept(ModItems.RAW_SPIRIT);
                       output.accept(ModItems.TIGER_SPIRIT);
                       output.accept(ModItems.EAGLE_SPIRIT);

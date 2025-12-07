@@ -3,6 +3,7 @@
 
   "item.playgroundmod.raw_lightite": "Raw Lightite",
   "item.playgroundmod.lightite": "Lightite",
+  "item.playgroundmod.refined_lightite": "Refined Lightite",
   "item.playgroundmod.raw_spirit": "Raw Spirit",
   "item.playgroundmod.tiger_spirit": "Tiger Spirit",
   "item.playgroundmod.eagle_spirit": "Eagle Spirit",
@@ -11,5 +12,6 @@
   "item.playgroundmod.snake_spirit": "Snake Spirit",
 
   "block.playgroundmod.lightite_ore": "Lightite Ore",
-  "block.playgroundmod.lightite_block": "Block of Lightite"
+  "block.playgroundmod.lightite_block": "Block of Lightite",
+  "block.playgroundmod.refined_lightite_block": "Block of Refined Lightite"
 }
