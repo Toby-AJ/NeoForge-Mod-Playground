@@ -41,6 +41,8 @@ public class PlaygroundMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -59,7 +61,7 @@ public class PlaygroundMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        /*if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.RAW_LIGHTITE);
             event.accept(ModItems.LIGHTITE);
@@ -71,7 +73,7 @@ public class PlaygroundMod
         {
             event.accept(ModBlocks.LIGHTITE_ORE);
             event.accept(ModBlocks.LIGHTITE_BLOCK);
-        }
+        }*/
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
