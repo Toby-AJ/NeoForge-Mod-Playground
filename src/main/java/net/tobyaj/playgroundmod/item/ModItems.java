@@ -10,9 +10,9 @@ public class ModItems
 {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(PlaygroundMod.MOD_ID);
 
-    public static final DeferredItem<Item> RAW_LIGHTITE = ITEMS.register("raw_lightite", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> LIGHTITE = ITEMS.register("lightite", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> REFINED_LIGHTITE = ITEMS.register("refined_lightite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IMPERFECT_VOID_STONE = ITEMS.register("imperfect_void_stone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VOID_STONE = ITEMS.register("void_stone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> REFINED_VOID_STONE = ITEMS.register("refined_void_stone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_SPIRIT = ITEMS.register("raw_spirit", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIGER_SPIRIT = ITEMS.register("tiger_spirit", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> EAGLE_SPIRIT = ITEMS.register("eagle_spirit", () -> new Item(new Item.Properties()));

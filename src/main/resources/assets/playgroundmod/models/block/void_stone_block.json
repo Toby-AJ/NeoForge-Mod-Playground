@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "playgroundmod:block/lightite_ore"
+    "all": "playgroundmod:block/void_stone_block"
   }
 }

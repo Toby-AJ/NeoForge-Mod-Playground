@@ -20,12 +20,13 @@ public class ModCreativeModeTabs
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TIGER_SPIRIT.get()))
                     .title(Component.translatable("creativetab.playgroundmod.playground_items"))
                     .displayItems((parameters, output) -> {
-                      output.accept(ModBlocks.LIGHTITE_ORE);
-                      output.accept(ModBlocks.LIGHTITE_BLOCK);
-                      output.accept(ModBlocks.REFINED_LIGHTITE_BLOCK);
-                      output.accept(ModItems.RAW_LIGHTITE);
-                      output.accept(ModItems.LIGHTITE);
-                      output.accept(ModItems.REFINED_LIGHTITE);
+                      output.accept(ModBlocks.VOID_STONE_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_VOID_STONE_ORE);
+                      output.accept(ModBlocks.VOID_STONE_BLOCK);
+                      output.accept(ModBlocks.REFINED_VOID_STONE_BLOCK);
+                      output.accept(ModItems.IMPERFECT_VOID_STONE);
+                      output.accept(ModItems.VOID_STONE);
+                      output.accept(ModItems.REFINED_VOID_STONE);
                       output.accept(ModItems.RAW_SPIRIT);
                       output.accept(ModItems.TIGER_SPIRIT);
                       output.accept(ModItems.EAGLE_SPIRIT);

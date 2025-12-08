@@ -19,17 +19,21 @@ public class ModBlocks
 {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PlaygroundMod.MOD_ID);
 
-    public static final DeferredBlock<Block> LIGHTITE_ORE = registerBlock("lightite_ore",
+    public static final DeferredBlock<Block> VOID_STONE_ORE = registerBlock("void_stone_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> LIGHTITE_BLOCK = registerBlock("lightite_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> DEEPSLATE_VOID_STONE_ORE = registerBlock("deepslate_void_stone_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-    public static final DeferredBlock<Block> REFINED_LIGHTITE_BLOCK = registerBlock("refined_lightite_block",
+    public static final DeferredBlock<Block> VOID_STONE_BLOCK = registerBlock("void_stone_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CHAIN)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> REFINED_VOID_STONE_BLOCK = registerBlock("refined_void_stone_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {

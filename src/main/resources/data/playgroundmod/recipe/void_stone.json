@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "playgroundmod:void_stone_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "playgroundmod:void_stone"
+  }
+}

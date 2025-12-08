@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "playgroundmod:void_stone_ore",
+    "playgroundmod:void_stone_block",
+    "playgroundmod:refined_void_stone_block"
+  ]
+}

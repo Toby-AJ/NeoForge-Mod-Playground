@@ -1,9 +1,9 @@
 {
   "creativetab.playgroundmod.playground_items": "Playground",
 
-  "item.playgroundmod.raw_lightite": "Raw Lightite",
-  "item.playgroundmod.lightite": "Lightite",
-  "item.playgroundmod.refined_lightite": "Refined Lightite",
+  "item.playgroundmod.imperfect_void_stone": "Imperfect Void Stone",
+  "item.playgroundmod.void_stone": "Void Stone",
+  "item.playgroundmod.refined_void_stone": "Refined Void Stone",
   "item.playgroundmod.raw_spirit": "Raw Spirit",
   "item.playgroundmod.tiger_spirit": "Tiger Spirit",
   "item.playgroundmod.eagle_spirit": "Eagle Spirit",
@@ -11,7 +11,8 @@
   "item.playgroundmod.bear_spirit": "Bear Spirit",
   "item.playgroundmod.snake_spirit": "Snake Spirit",
 
-  "block.playgroundmod.lightite_ore": "Lightite Ore",
-  "block.playgroundmod.lightite_block": "Block of Lightite",
-  "block.playgroundmod.refined_lightite_block": "Block of Refined Lightite"
+  "block.playgroundmod.void_stone_ore": "Void Stone Ore",
+  "block.playgroundmod.deepslate_void_stone_ore": "Deepslate Void Stone Ore",
+  "block.playgroundmod.void_stone_block": "Block of Void Stone",
+  "block.playgroundmod.refined_void_stone_block": "Block of Refined Void Stone"
 }
