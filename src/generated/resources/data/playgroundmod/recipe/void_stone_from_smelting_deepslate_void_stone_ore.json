@@ -1,14 +1,14 @@
 {
-  "type": "minecraft:blasting",
+  "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 100,
+  "cookingtime": 200,
   "experience": 0.25,
   "group": "void_stone",
   "ingredient": {
     "item": "playgroundmod:deepslate_void_stone_ore"
   },
   "result": {
-    "count": 2,
+    "count": 1,
     "id": "playgroundmod:void_stone"
   }
 }

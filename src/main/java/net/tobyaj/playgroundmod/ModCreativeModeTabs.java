@@ -31,6 +31,7 @@ public class ModCreativeModeTabs
                       output.accept(ModItems.VOID_STONE);
                       output.accept(ModItems.REFINED_VOID_STONE);
                       output.accept(ModItems.LIGHTITE);
+                      output.accept(ModItems.HARDLIGHT_PROJECTION_CORE);
                       output.accept(ModItems.RAW_SPIRIT);
                       output.accept(ModItems.TIGER_SPIRIT);
                       output.accept(ModItems.EAGLE_SPIRIT);

@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "playgroundmod:void_stone"
+    "L": {
+      "item": "playgroundmod:lightite"
     }
   },
   "pattern": [
-    "BBB",
-    "BBB",
-    "BBB"
+    "LLL",
+    "LLL",
+    "LLL"
   ],
   "result": {
     "count": 1,
-    "id": "playgroundmod:void_stone_block"
+    "id": "playgroundmod:lightite_block"
   }
 }

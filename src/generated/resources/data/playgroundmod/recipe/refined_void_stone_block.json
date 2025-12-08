@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
+    "R": {
       "item": "playgroundmod:refined_void_stone"
     }
   },
   "pattern": [
-    "BBB",
-    "BBB",
-    "BBB"
+    "RRR",
+    "RRR",
+    "RRR"
   ],
   "result": {
     "count": 1,

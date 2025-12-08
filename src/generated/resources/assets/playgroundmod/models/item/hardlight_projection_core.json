@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "playgroundmod:item/hardlight_projection_core"
+  }
+}

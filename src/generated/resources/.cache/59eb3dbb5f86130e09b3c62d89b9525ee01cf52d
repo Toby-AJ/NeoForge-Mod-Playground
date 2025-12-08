@@ -1,0 +1,8 @@
+// 1.21	2025-12-08T19:40:42.0454675	Loot Tables
+2509c2541e1071d2896225f5706d99e6d403beed data/playgroundmod/loot_table/blocks/deepslate_lightite_ore.json
+18b1f0b3f2a6d127955970f5e2b54a95cb83f4f6 data/playgroundmod/loot_table/blocks/deepslate_void_stone_ore.json
+72cc95e411790dea47c86d410cc84560bc941734 data/playgroundmod/loot_table/blocks/lightite_block.json
+91de5e49fd90f3d42eb7032dc0790af9918a4e49 data/playgroundmod/loot_table/blocks/lightite_ore.json
+a302a6e700cb351784e87889e6f9a4036feeb4f7 data/playgroundmod/loot_table/blocks/refined_void_stone_block.json
+1703fd1dd3bb50c9809ef6cc9cfc0b71b8b9d264 data/playgroundmod/loot_table/blocks/void_stone_block.json
+93e41c2692c33ccb9e33d6b9486992b0ffd95273 data/playgroundmod/loot_table/blocks/void_stone_ore.json

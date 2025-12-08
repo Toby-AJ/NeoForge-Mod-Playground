@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "L": {
+      "item": "playgroundmod:lightite"
+    }
+  },
+  "pattern": [
+    "GLG",
+    "LDL",
+    "GLG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "playgroundmod:hardlight_projection_core"
+  }
+}

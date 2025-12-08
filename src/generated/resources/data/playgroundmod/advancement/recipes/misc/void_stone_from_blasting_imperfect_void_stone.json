@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_imperfect_void_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "playgroundmod:imperfect_void_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "playgroundmod:void_stone_from_blasting_imperfect_void_stone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_imperfect_void_stone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "playgroundmod:void_stone_from_blasting_imperfect_void_stone"
+    ]
+  }
+}

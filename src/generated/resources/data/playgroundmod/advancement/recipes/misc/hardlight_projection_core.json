@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hardlight_projection_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": "playgroundmod:hardlight_projection_core"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "playgroundmod:hardlight_projection_core"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hardlight_projection_core"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "playgroundmod:hardlight_projection_core"
+    ]
+  }
+}
