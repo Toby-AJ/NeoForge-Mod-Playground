@@ -35,6 +35,18 @@ public class ModBlocks
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> LIGHTITE_ORE = registerBlock("lightite_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_LIGHTITE_ORE = registerBlock("deepslate_lightite_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIGHTITE_BLOCK = registerBlock("lightite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CHAIN)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

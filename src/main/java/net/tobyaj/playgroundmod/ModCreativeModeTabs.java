@@ -17,16 +17,20 @@ public class ModCreativeModeTabs
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PlaygroundMod.MOD_ID);
 
     public static final Supplier<CreativeModeTab> PLAYGROUND_TAB = CREATIVE_MODE_TAB.register("playground_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TIGER_SPIRIT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LIGHTITE.get()))
                     .title(Component.translatable("creativetab.playgroundmod.playground_items"))
                     .displayItems((parameters, output) -> {
                       output.accept(ModBlocks.VOID_STONE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_VOID_STONE_ORE);
                       output.accept(ModBlocks.VOID_STONE_BLOCK);
                       output.accept(ModBlocks.REFINED_VOID_STONE_BLOCK);
+                      output.accept(ModBlocks.LIGHTITE_ORE);
+                      output.accept(ModBlocks.DEEPSLATE_LIGHTITE_ORE);
+                      output.accept(ModBlocks.LIGHTITE_BLOCK);
                       output.accept(ModItems.IMPERFECT_VOID_STONE);
                       output.accept(ModItems.VOID_STONE);
                       output.accept(ModItems.REFINED_VOID_STONE);
+                      output.accept(ModItems.LIGHTITE);
                       output.accept(ModItems.RAW_SPIRIT);
                       output.accept(ModItems.TIGER_SPIRIT);
                       output.accept(ModItems.EAGLE_SPIRIT);

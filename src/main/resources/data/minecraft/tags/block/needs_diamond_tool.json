@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "playgroundmod:deepslate_void_stone_ore"
+    "playgroundmod:void_stone_ore",
+    "playgroundmod:deepslate_void_stone_ore",
+    "playgroundmod:void_stone_block",
+    "playgroundmod:refined_void_stone_block",
+    "playgroundmod:deepslate_lightite_ore"
   ]
 }
