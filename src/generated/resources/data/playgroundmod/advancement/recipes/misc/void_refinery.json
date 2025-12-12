@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "playgroundmod:void_refinery"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_void_refinery": {
+      "conditions": {
+        "items": [
+          {
+            "items": "playgroundmod:void_refinery"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_void_refinery"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "playgroundmod:void_refinery"
+    ]
+  }
+}

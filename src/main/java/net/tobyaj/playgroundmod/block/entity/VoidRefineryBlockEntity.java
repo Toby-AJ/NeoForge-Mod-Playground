@@ -43,7 +43,7 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 72;
+    private int maxProgress = 400;
 
     public VoidRefineryBlockEntity(BlockPos pos, BlockState blockState)
     {
@@ -141,7 +141,7 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
     private void resetProgress()
     {
         progress = 0;
-        maxProgress = 72;
+        maxProgress = 400;
     }
 
     private boolean hasCraftingFinished()

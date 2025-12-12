@@ -46,6 +46,51 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('L', ModItems.LIGHTITE.get())
                 .unlockedBy("has_lightite", has(ModItems.LIGHTITE)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_CORE.get(), 2)
+                .pattern("LCL")
+                .pattern("LRL")
+                .pattern("LCL")
+                .define('L', ModItems.LIGHTITE.get())
+                .define('C', Items.COPPER_INGOT)
+                .define('R', Items.REDSTONE)
+                .unlockedBy("has_power_core", has(ModItems.POWER_CORE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASIC_PROCESSOR.get())
+                .pattern("RCR")
+                .pattern("CLC")
+                .pattern("RCR")
+                .define('L', ModItems.LIGHTITE.get())
+                .define('C', Items.COPPER_INGOT)
+                .define('R', Items.REDSTONE)
+                .unlockedBy("has_basic_processor", has(ModItems.BASIC_PROCESSOR)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VOID_PROCESSOR.get())
+                .pattern("GVG")
+                .pattern("VBV")
+                .pattern("GVG")
+                .define('B', ModItems.BASIC_PROCESSOR.get())
+                .define('V', ModItems.VOID_STONE.get())
+                .define('G', Items.GOLD_INGOT)
+                .unlockedBy("has_void_processor", has(ModItems.VOID_PROCESSOR)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REFINED_VOID_PROCESSOR.get())
+                .pattern("DRD")
+                .pattern("RVR")
+                .pattern("DRD")
+                .define('V', ModItems.VOID_PROCESSOR.get())
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .define('D', Items.DIAMOND)
+                .unlockedBy("has_refined_void_processor", has(ModItems.REFINED_VOID_PROCESSOR)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIGHTITE_PROCESSOR.get())
+                .pattern("GLG")
+                .pattern("LBL")
+                .pattern("GLG")
+                .define('B', ModItems.BASIC_PROCESSOR.get())
+                .define('L', ModItems.LIGHTITE.get())
+                .define('G', Items.GOLD_INGOT)
+                .unlockedBy("has_lightite_processor", has(ModItems.LIGHTITE_PROCESSOR)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HARDLIGHT_PROJECTION_CORE.get())
                 .pattern("GLG")
                 .pattern("LDL")
@@ -54,6 +99,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('L', ModItems.LIGHTITE.get())
                 .define('G', Items.GLASS)
                 .unlockedBy("has_hardlight_projection_core", has(ModItems.HARDLIGHT_PROJECTION_CORE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HARDLIGHT_PROJECTOR.get())
+                .pattern("GHG")
+                .pattern("RPR")
+                .pattern("GRG")
+                .define('H', ModItems.HARDLIGHT_PROJECTION_CORE.get())
+                .define('P', ModItems.POWER_CORE.get())
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .define('G', Items.GLASS)
+                .unlockedBy("has_hardlight_projector", has(ModItems.HARDLIGHT_PROJECTOR)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VOID_REFINERY.get())
+                .pattern("VPV")
+                .pattern("CSC")
+                .pattern("VRV")
+                .define('P', ModItems.VOID_PROCESSOR.get())
+                .define('C', ModItems.POWER_CORE.get())
+                .define('S', ModBlocks.VOID_STONE_BLOCK.get())
+                .define('V', ModItems.VOID_STONE.get())
+                .define('R', Items.REDSTONE)
+                .unlockedBy("has_void_refinery", has(ModBlocks.VOID_REFINERY)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.VOID_STONE.get(), 9)
                 .requires(ModBlocks.VOID_STONE_BLOCK)

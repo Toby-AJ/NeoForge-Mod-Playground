@@ -49,7 +49,8 @@ public class ModBlocks
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CHAIN)));
 
     public static final DeferredBlock<Block> VOID_REFINERY = registerBlock("void_refinery",
-            () -> new VoidRefineryBlock(BlockBehaviour.Properties.of()));
+            () -> new VoidRefineryBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {

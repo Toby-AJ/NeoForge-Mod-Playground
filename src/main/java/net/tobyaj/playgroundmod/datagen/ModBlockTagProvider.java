@@ -25,7 +25,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.REFINED_VOID_STONE_BLOCK.get())
                 .add(ModBlocks.LIGHTITE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_LIGHTITE_ORE.get())
-                .add(ModBlocks.LIGHTITE_BLOCK.get());
+                .add(ModBlocks.LIGHTITE_BLOCK.get())
+                .add(ModBlocks.VOID_REFINERY.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.LIGHTITE_ORE.get())
