@@ -19,5 +19,7 @@
   "block.playgroundmod.refined_void_stone_block": "Block of Refined Void Stone",
   "block.playgroundmod.lightite_ore": "Lightite Ore",
   "block.playgroundmod.deepslate_lightite_ore": "Deepslate Lightite Ore",
-  "block.playgroundmod.lightite_block": "Block of Lightite"
+  "block.playgroundmod.lightite_block": "Block of Lightite",
+
+  "block.playgroundmod.void_refinery": "Void Refinery"
 }

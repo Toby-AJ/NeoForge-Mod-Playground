@@ -25,8 +25,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> VOID_STONE_SMELTABLES = List.of(ModItems.IMPERFECT_VOID_STONE,
                 ModBlocks.VOID_STONE_ORE, ModBlocks.DEEPSLATE_VOID_STONE_ORE);
 
-        List<ItemLike> REFINED_VOID_STONE_SMELTABLES = List.of(ModItems.VOID_STONE);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VOID_STONE_BLOCK.get())
                 .pattern("VVV")
                 .pattern("VVV")
@@ -71,9 +69,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, VOID_STONE_SMELTABLES, RecipeCategory.MISC, ModItems.VOID_STONE.get(), 0.25f, 200, "void_stone");
         oreBlasting(recipeOutput, VOID_STONE_SMELTABLES, RecipeCategory.MISC, ModItems.VOID_STONE.get(), 0.25f, 100, "void_stone");
-
-        oreSmelting(recipeOutput, REFINED_VOID_STONE_SMELTABLES, RecipeCategory.MISC, ModItems.REFINED_VOID_STONE.get(), 0.25f, 400, "void_stone");
-        oreBlasting(recipeOutput, REFINED_VOID_STONE_SMELTABLES, RecipeCategory.MISC, ModItems.REFINED_VOID_STONE.get(), 0.25f, 300, "void_stone");
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

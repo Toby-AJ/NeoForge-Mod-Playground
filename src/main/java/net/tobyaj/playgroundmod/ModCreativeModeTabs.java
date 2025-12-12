@@ -27,6 +27,7 @@ public class ModCreativeModeTabs
                       output.accept(ModBlocks.LIGHTITE_ORE);
                       output.accept(ModBlocks.DEEPSLATE_LIGHTITE_ORE);
                       output.accept(ModBlocks.LIGHTITE_BLOCK);
+                      output.accept(ModBlocks.VOID_REFINERY.get());
                       output.accept(ModItems.IMPERFECT_VOID_STONE);
                       output.accept(ModItems.VOID_STONE);
                       output.accept(ModItems.REFINED_VOID_STONE);

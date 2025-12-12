@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tobyaj.playgroundmod.PlaygroundMod;
+import net.tobyaj.playgroundmod.block.custom.VoidRefineryBlock;
 import net.tobyaj.playgroundmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -46,6 +47,9 @@ public class ModBlocks
     public static final DeferredBlock<Block> LIGHTITE_BLOCK = registerBlock("lightite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CHAIN)));
+
+    public static final DeferredBlock<Block> VOID_REFINERY = registerBlock("void_refinery",
+            () -> new VoidRefineryBlock(BlockBehaviour.Properties.of()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {

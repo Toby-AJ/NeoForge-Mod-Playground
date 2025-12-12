@@ -1,8 +1,12 @@
 package net.tobyaj.playgroundmod;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.tobyaj.playgroundmod.block.ModBlocks;
+import net.tobyaj.playgroundmod.block.entity.ModBlockEntities;
 import net.tobyaj.playgroundmod.item.ModItems;
+import net.tobyaj.playgroundmod.screen.ModMenuTypes;
+import net.tobyaj.playgroundmod.screen.custom.VoidRefineryScreen;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -45,6 +49,8 @@ public class PlaygroundMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -73,11 +79,18 @@ public class PlaygroundMod
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = PlaygroundMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    static class ClientModEvents {
+    static class ClientModEvents
+    {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event)
         {
 
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event)
+        {
+            event.register(ModMenuTypes.VOID_REFINERY_MENU.get(), VoidRefineryScreen::new);
         }
     }
 }
