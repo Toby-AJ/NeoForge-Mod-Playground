@@ -1,5 +1,7 @@
 package net.tobyaj.playgroundmod.worldgen;
 
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.tobyaj.playgroundmod.PlaygroundMod;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -14,9 +16,18 @@ import java.util.List;
 
 public class ModPlacedFeatures
 {
+    public static final ResourceKey<PlacedFeature> LIGHTITE_ORE_PLACED_KEY = registerKey("lightite_ore_placed");
+    public static final ResourceKey<PlacedFeature> VOID_STONE_ORE_PLACED_KEY = registerKey("void_stone_ore_placed");
+
     public static void bootstrap(BootstrapContext<PlacedFeature> context)
     {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+
+        register(context, LIGHTITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LIGHTITE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(3, HeightRangePlacement.triangle(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(32))));
+
+        register(context, VOID_STONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.VOID_STONE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(7, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name)

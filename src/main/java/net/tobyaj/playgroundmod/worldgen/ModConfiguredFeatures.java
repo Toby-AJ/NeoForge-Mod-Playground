@@ -4,18 +4,38 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.tobyaj.playgroundmod.PlaygroundMod;
+import net.tobyaj.playgroundmod.block.ModBlocks;
 
-import java.security.Key;
+import java.util.List;
 
 public class ModConfiguredFeatures
 {
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LIGHTITE_ORE_KEY = registerKey("lightite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> VOID_STONE_ORE_KEY = registerKey("void_stone_ore");
+
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context)
     {
+        RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
+        List<OreConfiguration.TargetBlockState> lightiteOresList = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.LIGHTITE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_LIGHTITE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> voidStoneOresList = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.VOID_STONE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_VOID_STONE_ORE.get().defaultBlockState()));
+
+        register(context, LIGHTITE_ORE_KEY, Feature.ORE, new OreConfiguration(lightiteOresList, 7));
+        register(context, VOID_STONE_ORE_KEY, Feature.ORE, new OreConfiguration(voidStoneOresList, 8));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name)
