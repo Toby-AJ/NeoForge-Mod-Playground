@@ -1,4 +1,8 @@
-// 1.21	2025-12-12T23:52:43.5948124	Item Models: playgroundmod
+// 1.21	2025-12-13T01:03:02.7144731	Item Models: playgroundmod
+18f561a560599f9893b8ec13689c2fb20a59c58f assets/playgroundmod/models/item/base_power_armour_boots.json
+d8e648fd565dd31752f75632694b59676cd62c7f assets/playgroundmod/models/item/base_power_armour_chestplate.json
+2d479990a58881be1bfb2eaa61c0d46b38ab8149 assets/playgroundmod/models/item/base_power_armour_helmet.json
+5376d9108a7586f06be9a48f1a3368362ea031cb assets/playgroundmod/models/item/base_power_armour_leggings.json
 55fb5bc16ae0c878779dc081ae07eaad231b6032 assets/playgroundmod/models/item/basic_processor.json
 4123e9790bce92c38f7beb0dbc104f106e4f826c assets/playgroundmod/models/item/bear_spirit.json
 206b4c1ac569d15391cc5c054218891df4cf2d5f assets/playgroundmod/models/item/eagle_spirit.json

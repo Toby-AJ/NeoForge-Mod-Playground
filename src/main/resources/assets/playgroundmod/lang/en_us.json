@@ -12,6 +12,13 @@
   "item.playgroundmod.lightite_processor": "Lightite Processor",
   "item.playgroundmod.hardlight_projection_core": "Hardlight Projection Core",
   "item.playgroundmod.hardlight_projector": "Hardlight Projector",
+
+  "item.playgroundmod.base_power_armour_helmet": "Base Power Armour Helmet",
+  "item.playgroundmod.base_power_armour_chestplate": "Base Power Armour Chestplate",
+  "item.playgroundmod.base_power_armour_leggings": "Base Power Armour Leggings",
+  "item.playgroundmod.base_power_armour_boots": "Base Power Armour Boots",
+
+
   "item.playgroundmod.raw_spirit": "Raw Spirit",
   "item.playgroundmod.tiger_spirit": "Tiger Spirit",
   "item.playgroundmod.eagle_spirit": "Eagle Spirit",

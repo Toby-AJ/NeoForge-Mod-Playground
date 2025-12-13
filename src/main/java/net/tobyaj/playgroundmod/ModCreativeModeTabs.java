@@ -28,6 +28,7 @@ public class ModCreativeModeTabs
                       output.accept(ModBlocks.DEEPSLATE_LIGHTITE_ORE);
                       output.accept(ModBlocks.LIGHTITE_BLOCK);
                       output.accept(ModBlocks.VOID_REFINERY.get());
+
                       output.accept(ModItems.IMPERFECT_VOID_STONE);
                       output.accept(ModItems.VOID_STONE);
                       output.accept(ModItems.REFINED_VOID_STONE);
@@ -39,6 +40,12 @@ public class ModCreativeModeTabs
                       output.accept(ModItems.LIGHTITE_PROCESSOR);
                       output.accept(ModItems.HARDLIGHT_PROJECTION_CORE);
                       output.accept(ModItems.HARDLIGHT_PROJECTOR);
+
+                      output.accept((ModItems.BASE_POWER_ARMOUR_HELMET));
+                      output.accept((ModItems.BASE_POWER_ARMOUR_CHESTPLATE));
+                      output.accept((ModItems.BASE_POWER_ARMOUR_LEGGINGS));
+                      output.accept((ModItems.BASE_POWER_ARMOUR_BOOTS));
+
                       output.accept(ModItems.RAW_SPIRIT);
                       output.accept(ModItems.TIGER_SPIRIT);
                       output.accept(ModItems.EAGLE_SPIRIT);

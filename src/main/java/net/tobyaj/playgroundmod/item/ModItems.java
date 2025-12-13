@@ -1,5 +1,6 @@
 package net.tobyaj.playgroundmod.item;
 
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -22,6 +23,19 @@ public class ModItems
     public static final DeferredItem<Item> LIGHTITE_PROCESSOR = ITEMS.register("lightite_processor", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> HARDLIGHT_PROJECTION_CORE = ITEMS.register("hardlight_projection_core", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> HARDLIGHT_PROJECTOR = ITEMS.register("hardlight_projector", () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<ArmorItem> BASE_POWER_ARMOUR_HELMET = ITEMS.register("base_power_armour_helmet",
+            () -> new ArmorItem(ModArmourMaterials.REFINED_VOID_STONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(12))));
+    public static final DeferredItem<ArmorItem> BASE_POWER_ARMOUR_CHESTPLATE = ITEMS.register("base_power_armour_chestplate",
+            () -> new ArmorItem(ModArmourMaterials.REFINED_VOID_STONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(12))));
+    public static final DeferredItem<ArmorItem> BASE_POWER_ARMOUR_LEGGINGS = ITEMS.register("base_power_armour_leggings",
+            () -> new ArmorItem(ModArmourMaterials.REFINED_VOID_STONE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(12))));
+    public static final DeferredItem<ArmorItem> BASE_POWER_ARMOUR_BOOTS = ITEMS.register("base_power_armour_boots",
+            () -> new ArmorItem(ModArmourMaterials.REFINED_VOID_STONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))));
 
     public static final DeferredItem<Item> RAW_SPIRIT = ITEMS.register("raw_spirit", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIGER_SPIRIT = ITEMS.register("tiger_spirit", () -> new Item(new Item.Properties()));

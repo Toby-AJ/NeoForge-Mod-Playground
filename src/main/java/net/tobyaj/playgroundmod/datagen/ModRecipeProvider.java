@@ -121,6 +121,34 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', Items.REDSTONE)
                 .unlockedBy("has_void_refinery", has(ModBlocks.VOID_REFINERY)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_POWER_ARMOUR_HELMET.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("   ")
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .unlockedBy("has_base_power_armour_helmet", has(ModItems.BASE_POWER_ARMOUR_HELMET)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_POWER_ARMOUR_CHESTPLATE.get())
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .unlockedBy("has_base_power_armour_chestplate", has(ModItems.BASE_POWER_ARMOUR_CHESTPLATE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_POWER_ARMOUR_LEGGINGS.get())
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .unlockedBy("has_base_power_armour_leggings", has(ModItems.BASE_POWER_ARMOUR_LEGGINGS)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_POWER_ARMOUR_BOOTS.get())
+                .pattern("   ")
+                .pattern("R R")
+                .pattern("R R")
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .unlockedBy("has_base_power_armour_boots", has(ModItems.BASE_POWER_ARMOUR_BOOTS)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.VOID_STONE.get(), 9)
                 .requires(ModBlocks.VOID_STONE_BLOCK)
                 .unlockedBy("has_void_stone_block", has(ModBlocks.VOID_STONE_BLOCK)).save(recipeOutput);
