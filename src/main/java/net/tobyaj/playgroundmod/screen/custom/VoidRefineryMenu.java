@@ -33,8 +33,12 @@ public class VoidRefineryMenu extends AbstractContainerMenu
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 54, 34));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 104, 34));
+        //this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 54, 34));
+        //this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 104, 34));
+
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 54, 20)); // Void Stone
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 54, 48)); // Ender Pearl
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 2, 104, 34)); // Output
 
         addDataSlots(data);
     }
@@ -66,10 +70,10 @@ public class VoidRefineryMenu extends AbstractContainerMenu
     private static final int PLAYER_INVENTORY_SLOT_COUNT = PLAYER_INVENTORY_COLUMN_COUNT * PLAYER_INVENTORY_ROW_COUNT;
     private static final int VANILLA_SLOT_COUNT = HOTBAR_SLOT_COUNT + PLAYER_INVENTORY_SLOT_COUNT;
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
-    private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
+    private static final int VR_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
+    private static final int VR_INVENTORY_SLOT_COUNT = 3;  // must be the number of slots you have!
 
     @Override
     public ItemStack quickMoveStack(Player player, int index)
@@ -82,11 +86,11 @@ public class VoidRefineryMenu extends AbstractContainerMenu
         // Check if the slot clicked is one of the vanilla container slots
         if (index < VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT) {
             // This is a vanilla container slot so merge the stack into the tile inventory
-            if (!moveItemStackTo(sourceStack, TE_INVENTORY_FIRST_SLOT_INDEX, TE_INVENTORY_FIRST_SLOT_INDEX
-                    + TE_INVENTORY_SLOT_COUNT, false)) {
+            if (!moveItemStackTo(sourceStack, VR_INVENTORY_FIRST_SLOT_INDEX, VR_INVENTORY_FIRST_SLOT_INDEX
+                    + VR_INVENTORY_SLOT_COUNT, false)) {
                 return ItemStack.EMPTY;  // EMPTY_ITEM
             }
-        } else if (index < TE_INVENTORY_FIRST_SLOT_INDEX + TE_INVENTORY_SLOT_COUNT) {
+        } else if (index < VR_INVENTORY_FIRST_SLOT_INDEX + VR_INVENTORY_SLOT_COUNT) {
             // This is a TE slot so merge the stack into the players inventory
             if (!moveItemStackTo(sourceStack, VANILLA_FIRST_SLOT_INDEX, VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT, false)) {
                 return ItemStack.EMPTY;

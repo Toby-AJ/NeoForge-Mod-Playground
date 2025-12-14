@@ -25,7 +25,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
 {
-    public final ItemStackHandler itemHandler = new ItemStackHandler(2)
+    public final ItemStackHandler itemHandler = new ItemStackHandler(3)
     {
         @Override
         protected void onContentsChanged(int slot)
@@ -38,8 +38,9 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
         }
     };
 
-    private static final int INPUT_SLOT = 0;
-    private static final int OUTPUT_SLOT = 1;
+    private static final int INPUT_SLOT_VOID = 0;
+    private static final int INPUT_SLOT_PEARL = 1;
+    private static final int OUTPUT_SLOT = 2;
 
     protected final ContainerData data;
     private int progress = 0;
@@ -133,9 +134,16 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
     {
         ItemStack output = new ItemStack(ModItems.REFINED_VOID_STONE.get(), 3);
 
-        itemHandler.extractItem(INPUT_SLOT, 1, false);
-        itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
-                itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
+        itemHandler.extractItem(INPUT_SLOT_VOID, 1, false);
+        itemHandler.extractItem(INPUT_SLOT_PEARL, 1, false);
+
+        itemHandler.setStackInSlot(
+                OUTPUT_SLOT,
+                new ItemStack(
+                        output.getItem(),
+                        itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()
+                )
+        );
     }
 
     private void resetProgress()
@@ -158,21 +166,24 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
     {
         ItemStack output = new ItemStack(ModItems.REFINED_VOID_STONE.get(), 3);
 
-        return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.VOID_STONE) &&
-                canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+        return itemHandler.getStackInSlot(INPUT_SLOT_VOID).is(ModItems.VOID_STONE)
+                && itemHandler.getStackInSlot(INPUT_SLOT_PEARL).is(net.minecraft.world.item.Items.ENDER_PEARL)
+                && canInsertAmountIntoOutputSlot(output.getCount())
+                && canInsertItemIntoOutputSlot(output);
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output)
     {
-        return itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ||
-                itemHandler.getStackInSlot(OUTPUT_SLOT).getItem() == output.getItem();
+        return itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty()
+                || itemHandler.getStackInSlot(OUTPUT_SLOT).getItem() == output.getItem();
     }
 
     private boolean canInsertAmountIntoOutputSlot(int count)
     {
-        int maxCount = itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ? 64 : itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
-        int currentCount = itemHandler.getStackInSlot(OUTPUT_SLOT).getCount();
+        int maxCount = itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() ? 64
+                : itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
 
+        int currentCount = itemHandler.getStackInSlot(OUTPUT_SLOT).getCount();
         return maxCount >= currentCount + count;
     }
 
