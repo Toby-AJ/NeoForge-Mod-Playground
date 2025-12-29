@@ -149,6 +149,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', ModItems.REFINED_VOID_STONE.get())
                 .unlockedBy("has_base_power_armour_boots", has(ModItems.BASE_POWER_ARMOUR_BOOTS)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPIRIT_ROD.get())
+                .pattern(" LA")
+                .pattern(" SL")
+                .pattern("W  ")
+                .define('A', Items.AMETHYST_SHARD)
+                .define('L', ModItems.LIGHTITE.get())
+                .define('S', Items.SOUL_SAND)
+                .define('W', Items.STICK)
+                .unlockedBy("has_spirit_rod", has(ModItems.SPIRIT_ROD)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.VOID_STONE.get(), 9)
                 .requires(ModBlocks.VOID_STONE_BLOCK)
                 .unlockedBy("has_void_stone_block", has(ModBlocks.VOID_STONE_BLOCK)).save(recipeOutput);

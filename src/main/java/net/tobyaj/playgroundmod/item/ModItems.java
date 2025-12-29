@@ -1,11 +1,16 @@
 package net.tobyaj.playgroundmod.item;
 
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tobyaj.playgroundmod.PlaygroundMod;
+import net.tobyaj.playgroundmod.item.custom.SpiritRodItem;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class ModItems
 {
@@ -36,6 +41,28 @@ public class ModItems
     public static final DeferredItem<ArmorItem> BASE_POWER_ARMOUR_BOOTS = ITEMS.register("base_power_armour_boots",
             () -> new ArmorItem(ModArmourMaterials.REFINED_VOID_STONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))));
+
+    public static final DeferredItem<Item> SPIRIT_ROD = ITEMS.register("spirit_rod", () -> new SpiritRodItem(new Item.Properties()
+            .durability(131).attributes(ItemAttributeModifiers.builder()
+                    .add(
+                            Attributes.ATTACK_DAMAGE,
+                            new AttributeModifier(
+                                    Item.BASE_ATTACK_DAMAGE_ID,
+                                    2.0D,
+                                    AttributeModifier.Operation.ADD_VALUE
+                            ),
+                            EquipmentSlotGroup.MAINHAND
+                    )
+                    .add(
+                            Attributes.ATTACK_SPEED,
+                            new AttributeModifier(
+                                    Item.BASE_ATTACK_SPEED_ID,
+                                    -3.2D,
+                                    AttributeModifier.Operation.ADD_VALUE
+                            ),
+                            EquipmentSlotGroup.MAINHAND
+                    )
+                    .build())));
 
     public static final DeferredItem<Item> RAW_SPIRIT = ITEMS.register("raw_spirit", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIGER_SPIRIT = ITEMS.register("tiger_spirit", () -> new Item(new Item.Properties()));

@@ -1,4 +1,4 @@
-// 1.21	2025-12-13T01:30:28.2646048	Recipes
+// 1.21	2025-12-15T10:07:57.1594126	Recipes
 0c12dde7d734c22485530b6af011e146d05952d8 data/playgroundmod/advancement/recipes/misc/base_power_armour_boots.json
 2f0276cb3612171abe23f52f1d927a97e5b7822c data/playgroundmod/advancement/recipes/misc/base_power_armour_chestplate.json
 2cf2b38b81ecd77208d41b271d408d33eb2b9c50 data/playgroundmod/advancement/recipes/misc/base_power_armour_helmet.json
@@ -13,6 +13,7 @@ b4af78f3db92c530052d88bbe523eca9e6c01756 data/playgroundmod/advancement/recipes/
 40817e76861932f1c417c36f07abb1af7006e034 data/playgroundmod/advancement/recipes/misc/refined_void_processor.json
 a377baaae059ce75facf3fe2c24db3a4d3445b0c data/playgroundmod/advancement/recipes/misc/refined_void_stone.json
 d7bf5c469a2727e2118157904bc427e3c745f6ea data/playgroundmod/advancement/recipes/misc/refined_void_stone_block.json
+3e6bf099bea660f04b96447190969a7c21fbe6cc data/playgroundmod/advancement/recipes/misc/spirit_rod.json
 0cde6c730e6073bbe4a4290a0a35a585b9d3c319 data/playgroundmod/advancement/recipes/misc/void_processor.json
 0e84c1e70810e013df41e9ed4a18505b9e4462ce data/playgroundmod/advancement/recipes/misc/void_refinery.json
 3d4714461d2db7d99be48de6cb72e098d9e40e39 data/playgroundmod/advancement/recipes/misc/void_stone.json
@@ -37,6 +38,7 @@ e40815f7e85adf40d1a70f09d75b4e90a491e92b data/playgroundmod/recipe/power_core.js
 2a45f7c8d8c123054b5f9e461a398e6242dd3fa1 data/playgroundmod/recipe/refined_void_processor.json
 7fb9af5ead5f04de914e63e133ef31c8ff56bb2e data/playgroundmod/recipe/refined_void_stone.json
 0c4ff0d0198fbc920020d9820bfd58a1a96c6d38 data/playgroundmod/recipe/refined_void_stone_block.json
+cd7f43c9e543fb6e6efe9d6204b0b5ead0b741bc data/playgroundmod/recipe/spirit_rod.json
 03cb53bd046b35eac224ab57a07f342316396478 data/playgroundmod/recipe/void_processor.json
 d0c1330ded4a1846eabf03b4390a3073dfd8fda4 data/playgroundmod/recipe/void_refinery.json
 45e1feb2fcb7acf90b28b884d989a6264ad9db58 data/playgroundmod/recipe/void_stone.json

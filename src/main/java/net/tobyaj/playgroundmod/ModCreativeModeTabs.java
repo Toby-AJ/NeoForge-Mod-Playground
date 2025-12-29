@@ -46,6 +46,7 @@ public class ModCreativeModeTabs
                       output.accept((ModItems.BASE_POWER_ARMOUR_LEGGINGS));
                       output.accept((ModItems.BASE_POWER_ARMOUR_BOOTS));
 
+                      output.accept(ModItems.SPIRIT_ROD);
                       output.accept(ModItems.RAW_SPIRIT);
                       output.accept(ModItems.TIGER_SPIRIT);
                       output.accept(ModItems.EAGLE_SPIRIT);
