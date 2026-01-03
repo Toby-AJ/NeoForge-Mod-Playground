@@ -24,6 +24,13 @@
   "item.playgroundmod.nano_projection_core": "Nano Projection Core",
   "item.playgroundmod.nano_projector": "Nano Projector",
   "item.playgroundmod.nano_processor": "Nano Processor",
+  "item.playgroundmod.armour_nanite": "Armour Nanite",
+  "item.playgroundmod.weapon_nanite": "Weapon Nanite",
+  "item.playgroundmod.bullet_nanite": "Bullet Nanite",
+  "item.playgroundmod.fire_nanite": "Fire Nanite",
+  "item.playgroundmod.teleport_nanite": "Teleport Nanite",
+  "item.playgroundmod.poison_nanite": "Poison Nanite",
+  "item.playgroundmod.explode_nanite": "Explode Nanite",
 
   "item.playgroundmod.spirit_rod": "Spirit Rod",
   "item.playgroundmod.raw_spirit": "Raw Spirit",

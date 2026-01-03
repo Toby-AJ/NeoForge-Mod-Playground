@@ -50,6 +50,13 @@ public class ModItems
     public static final DeferredItem<Item> NANO_PROJECTION_CORE = ITEMS.register("nano_projection_core", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NANO_PROJECTOR = ITEMS.register("nano_projector", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NANO_PROCESSOR = ITEMS.register("nano_processor", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ARMOUR_NANITE = ITEMS.register("armour_nanite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> WEAPON_NANITE = ITEMS.register("weapon_nanite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BULLET_NANITE = ITEMS.register("bullet_nanite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FIRE_NANITE = ITEMS.register("fire_nanite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TELEPORT_NANITE = ITEMS.register("teleport_nanite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> POISON_NANITE = ITEMS.register("poison_nanite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXPLODE_NANITE = ITEMS.register("explode_nanite", () -> new Item(new Item.Properties()));
 
     //SPIRIT
     public static final DeferredItem<Item> SPIRIT_ROD = ITEMS.register("spirit_rod", () -> new SpiritRodItem(new Item.Properties()

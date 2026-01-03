@@ -1,0 +1,25 @@
+{
+  "type": "playgroundmod:nano_former",
+  "pattern": [
+    " MMM ",
+    "VPHPV",
+    "VCNLV",
+    "VVBVV",
+    " RRR "
+  ],
+  "key": {
+    "N": { "item": "playgroundmod:nano_processor" },
+    "H": { "item": "playgroundmod:base_power_armour_helmet" },
+    "C": { "item": "playgroundmod:base_power_armour_chestplate" },
+    "L": { "item": "playgroundmod:base_power_armour_leggings" },
+    "B": { "item": "playgroundmod:base_power_armour_boots" },
+    "V": { "item": "playgroundmod:refined_void_stone" },
+    "P": { "item": "playgroundmod:hardlight_projector" },
+    "M": { "item": "minecraft:prismarine_crystals" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "playgroundmod:armour_nanite"
+  }
+}

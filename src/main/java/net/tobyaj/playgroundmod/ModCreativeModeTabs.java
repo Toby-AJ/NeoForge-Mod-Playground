@@ -51,9 +51,16 @@ public class ModCreativeModeTabs
                       output.accept((ModItems.BASE_POWER_ARMOUR_LEGGINGS));
                       output.accept((ModItems.BASE_POWER_ARMOUR_BOOTS));
 
-                    output.accept(ModItems.NANO_PROJECTION_CORE);
-                    output.accept(ModItems.NANO_PROJECTOR);
-                    output.accept(ModItems.NANO_PROCESSOR);
+                      output.accept(ModItems.NANO_PROJECTION_CORE);
+                      output.accept(ModItems.NANO_PROJECTOR);
+                      output.accept(ModItems.NANO_PROCESSOR);
+                      output.accept(ModItems.ARMOUR_NANITE);
+                      output.accept(ModItems.WEAPON_NANITE);
+                      output.accept(ModItems.BULLET_NANITE);
+                      output.accept(ModItems.FIRE_NANITE);
+                      output.accept(ModItems.TELEPORT_NANITE);
+                      output.accept(ModItems.POISON_NANITE);
+                      output.accept(ModItems.EXPLODE_NANITE);
 
                       output.accept(ModItems.SPIRIT_ROD);
                       output.accept(ModItems.RAW_SPIRIT);

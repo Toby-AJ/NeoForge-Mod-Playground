@@ -34,6 +34,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.NANO_PROJECTION_CORE.get());
         basicItem(ModItems.NANO_PROJECTOR.get());
         basicItem(ModItems.NANO_PROCESSOR.get());
+        basicItem(ModItems.ARMOUR_NANITE.get());
+        basicItem(ModItems.WEAPON_NANITE.get());
+        basicItem(ModItems.BULLET_NANITE.get());
+        basicItem(ModItems.FIRE_NANITE.get());
+        basicItem(ModItems.TELEPORT_NANITE.get());
+        basicItem(ModItems.POISON_NANITE.get());
+        basicItem(ModItems.EXPLODE_NANITE.get());
         basicItem(ModItems.SPIRIT_ROD.get());
         basicItem(ModItems.RAW_SPIRIT.get());
         basicItem(ModItems.TIGER_SPIRIT.get());

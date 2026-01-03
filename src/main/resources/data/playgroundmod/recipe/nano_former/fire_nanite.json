@@ -1,0 +1,22 @@
+{
+  "type": "playgroundmod:nano_former",
+  "pattern": [
+    " FFF ",
+    "VBPBV",
+    "VPNPV",
+    "VVRVV",
+    " FFF "
+  ],
+  "key": {
+    "N": { "item": "playgroundmod:nano_processor" },
+    "V": { "item": "playgroundmod:refined_void_stone" },
+    "F": { "item": "minecraft:fire_charge" },
+    "B": { "item": "minecraft:blaze_rod" },
+    "P": { "item": "minecraft:blaze_powder" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "playgroundmod:fire_nanite"
+  }
+}

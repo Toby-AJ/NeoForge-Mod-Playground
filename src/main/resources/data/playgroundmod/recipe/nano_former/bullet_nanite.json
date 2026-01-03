@@ -1,0 +1,22 @@
+{
+  "type": "playgroundmod:nano_former",
+  "pattern": [
+    " III ",
+    "VFFFV",
+    "VINIV",
+    "VVRVV",
+    " GGG "
+  ],
+  "key": {
+    "N": { "item": "playgroundmod:nano_processor" },
+    "V": { "item": "playgroundmod:refined_void_stone" },
+    "I": { "item": "minecraft:iron_ingot" },
+    "F": { "item": "minecraft:flint" },
+    "G": { "item": "minecraft:gunpowder" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "playgroundmod:bullet_nanite"
+  }
+}

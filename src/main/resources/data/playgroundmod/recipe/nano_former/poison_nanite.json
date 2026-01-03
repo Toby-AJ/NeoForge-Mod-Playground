@@ -1,0 +1,23 @@
+{
+  "type": "playgroundmod:nano_former",
+  "pattern": [
+    " AGA ",
+    "VGEGV",
+    "VPNPV",
+    "VVPVV",
+    " RRR "
+  ],
+  "key": {
+    "N": { "item": "playgroundmod:nano_processor" },
+    "V": { "item": "playgroundmod:refined_void_stone" },
+    "G": { "item": "minecraft:glass" },
+    "A": { "item": "minecraft:amethyst_shard" },
+    "E": { "item": "minecraft:fermented_spider_eye" },
+    "P": { "item": "minecraft:splash_potion", "nbt": "{Potion:\"minecraft:poison\"}" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "playgroundmod:poison_nanite"
+  }
+}
