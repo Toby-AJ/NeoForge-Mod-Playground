@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "playgroundmod:basic_processor"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "R": {
+      "item": "playgroundmod:refined_void_stone"
+    },
+    "V": {
+      "item": "playgroundmod:void_rod"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "GBR",
+    "  V"
+  ],
+  "result": {
+    "count": 1,
+    "id": "playgroundmod:base_projectile_weapon"
+  }
+}

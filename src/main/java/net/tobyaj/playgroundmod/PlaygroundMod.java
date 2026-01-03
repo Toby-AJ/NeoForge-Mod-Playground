@@ -1,11 +1,12 @@
 package net.tobyaj.playgroundmod;
 
-import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.tobyaj.playgroundmod.block.ModBlocks;
 import net.tobyaj.playgroundmod.block.entity.ModBlockEntities;
 import net.tobyaj.playgroundmod.item.ModItems;
+import net.tobyaj.playgroundmod.recipe.ModRecipes;
 import net.tobyaj.playgroundmod.screen.ModMenuTypes;
+import net.tobyaj.playgroundmod.screen.custom.NanoFormerScreen;
 import net.tobyaj.playgroundmod.screen.custom.VoidRefineryScreen;
 import org.slf4j.Logger;
 
@@ -51,6 +52,7 @@ public class PlaygroundMod
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -91,6 +93,7 @@ public class PlaygroundMod
         public static void registerScreens(RegisterMenuScreensEvent event)
         {
             event.register(ModMenuTypes.VOID_REFINERY_MENU.get(), VoidRefineryScreen::new);
+            event.register(ModMenuTypes.NANO_FORMER_MENU.get(), NanoFormerScreen::new);
         }
     }
 }

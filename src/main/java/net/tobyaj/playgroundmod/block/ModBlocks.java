@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tobyaj.playgroundmod.PlaygroundMod;
+import net.tobyaj.playgroundmod.block.custom.NanoFormerBlock;
 import net.tobyaj.playgroundmod.block.custom.VoidRefineryBlock;
 import net.tobyaj.playgroundmod.item.ModItems;
 
@@ -20,6 +21,7 @@ public class ModBlocks
 {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PlaygroundMod.MOD_ID);
 
+    //Generic
     public static final DeferredBlock<Block> VOID_STONE_ORE = registerBlock("void_stone_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -34,7 +36,7 @@ public class ModBlocks
 
     public static final DeferredBlock<Block> REFINED_VOID_STONE_BLOCK = registerBlock("refined_void_stone_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
 
     public static final DeferredBlock<Block> LIGHTITE_ORE = registerBlock("lightite_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
@@ -51,6 +53,13 @@ public class ModBlocks
     public static final DeferredBlock<Block> VOID_REFINERY = registerBlock("void_refinery",
             () -> new VoidRefineryBlock(BlockBehaviour.Properties.of().strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    //STEAMPUNK
+    public static final DeferredBlock<Block> NANO_FORMER = registerBlock("nano_former",
+            () -> new NanoFormerBlock(BlockBehaviour.Properties.of().strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    //SPIRIT
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {

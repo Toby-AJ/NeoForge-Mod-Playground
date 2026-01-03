@@ -1,8 +1,10 @@
-// 1.21	2025-12-15T10:04:43.8294346	Item Models: playgroundmod
+// 1.21	2026-01-03T19:16:58.8897158	Item Models: playgroundmod
+a52c5774d6596c90f9b3c2eb5626c97b07e6aaaa assets/playgroundmod/models/item/base_melee_weapon.json
 18f561a560599f9893b8ec13689c2fb20a59c58f assets/playgroundmod/models/item/base_power_armour_boots.json
 d8e648fd565dd31752f75632694b59676cd62c7f assets/playgroundmod/models/item/base_power_armour_chestplate.json
 2d479990a58881be1bfb2eaa61c0d46b38ab8149 assets/playgroundmod/models/item/base_power_armour_helmet.json
 5376d9108a7586f06be9a48f1a3368362ea031cb assets/playgroundmod/models/item/base_power_armour_leggings.json
+205f1c20936e8a406a4ff4be6af0a6ccb082f532 assets/playgroundmod/models/item/base_projectile_weapon.json
 55fb5bc16ae0c878779dc081ae07eaad231b6032 assets/playgroundmod/models/item/basic_processor.json
 4123e9790bce92c38f7beb0dbc104f106e4f826c assets/playgroundmod/models/item/bear_spirit.json
 206b4c1ac569d15391cc5c054218891df4cf2d5f assets/playgroundmod/models/item/eagle_spirit.json
@@ -11,6 +13,9 @@ b6610644bd5f4b793525a011f399c728cd299efa assets/playgroundmod/models/item/hardli
 93ead7823512e1b92a690394d5d0a73fa88210a6 assets/playgroundmod/models/item/imperfect_void_stone.json
 a1101688b358a8e6518f42aca23762607c2e9740 assets/playgroundmod/models/item/lightite.json
 5f8f9241ad21f4a43d7568e28349dd1b3e2111f1 assets/playgroundmod/models/item/lightite_processor.json
+f3ec29c4cb74632c477ea55b5f863bed7e9282dd assets/playgroundmod/models/item/nano_processor.json
+28236cdeb4cf8c752affe7cdbdfa83e45c5c1ab8 assets/playgroundmod/models/item/nano_projection_core.json
+581f87d305dd766a104fe68d89b35c28109a9cc8 assets/playgroundmod/models/item/nano_projector.json
 ca9aa1b97313293a72306291a38d871f79e8ea26 assets/playgroundmod/models/item/power_core.json
 12b5784e34bd45ea23ed1062ebd9947b101746a7 assets/playgroundmod/models/item/raw_spirit.json
 b1fd72af18ed1b452ef6d5941a2758a87858673a assets/playgroundmod/models/item/refined_void_processor.json
@@ -20,4 +25,5 @@ b1fd72af18ed1b452ef6d5941a2758a87858673a assets/playgroundmod/models/item/refine
 c6a8a83672649b4c0fe9d54cf5619f6f1d7f14b5 assets/playgroundmod/models/item/spirit_rod.json
 a530b1219ce4482f27e01ac3c97e0478b4b1424a assets/playgroundmod/models/item/tiger_spirit.json
 70b2fd5e7bfc0832dfedfb059009b5f778417669 assets/playgroundmod/models/item/void_processor.json
+b520e3d9d7d54a491fb6fca39096321cdd1a1e36 assets/playgroundmod/models/item/void_rod.json
 0e7fa95a69e4379ae68ff9dfb5f752806a46fcf0 assets/playgroundmod/models/item/void_stone.json

@@ -12,12 +12,18 @@
   "item.playgroundmod.lightite_processor": "Lightite Processor",
   "item.playgroundmod.hardlight_projection_core": "Hardlight Projection Core",
   "item.playgroundmod.hardlight_projector": "Hardlight Projector",
+  "item.playgroundmod.void_rod": "Void Rod",
+  "item.playgroundmod.base_melee_weapon": "Base Melee Weapon",
+  "item.playgroundmod.base_projectile_weapon": "Base Projectile Weapon",
 
   "item.playgroundmod.base_power_armour_helmet": "Base Power Armour Helmet",
   "item.playgroundmod.base_power_armour_chestplate": "Base Power Armour Chestplate",
   "item.playgroundmod.base_power_armour_leggings": "Base Power Armour Leggings",
   "item.playgroundmod.base_power_armour_boots": "Base Power Armour Boots",
 
+  "item.playgroundmod.nano_projection_core": "Nano Projection Core",
+  "item.playgroundmod.nano_projector": "Nano Projector",
+  "item.playgroundmod.nano_processor": "Nano Processor",
 
   "item.playgroundmod.spirit_rod": "Spirit Rod",
   "item.playgroundmod.raw_spirit": "Raw Spirit",
@@ -35,5 +41,6 @@
   "block.playgroundmod.deepslate_lightite_ore": "Deepslate Lightite Ore",
   "block.playgroundmod.lightite_block": "Block of Lightite",
 
-  "block.playgroundmod.void_refinery": "Void Refinery"
+  "block.playgroundmod.void_refinery": "Void Refinery",
+  "block.playgroundmod.nano_former": "Nano Former"
 }

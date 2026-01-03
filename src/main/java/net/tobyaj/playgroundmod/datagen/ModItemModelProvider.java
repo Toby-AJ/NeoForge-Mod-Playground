@@ -24,10 +24,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.LIGHTITE_PROCESSOR.get());
         basicItem(ModItems.HARDLIGHT_PROJECTION_CORE.get());
         basicItem(ModItems.HARDLIGHT_PROJECTOR.get());
+        basicItem(ModItems.VOID_ROD.get());
+        basicItem(ModItems.BASE_MELEE_WEAPON.get());
+        basicItem(ModItems.BASE_PROJECTILE_WEAPON.get());
         basicItem(ModItems.BASE_POWER_ARMOUR_HELMET.get());
         basicItem(ModItems.BASE_POWER_ARMOUR_CHESTPLATE.get());
         basicItem(ModItems.BASE_POWER_ARMOUR_LEGGINGS.get());
         basicItem(ModItems.BASE_POWER_ARMOUR_BOOTS.get());
+        basicItem(ModItems.NANO_PROJECTION_CORE.get());
+        basicItem(ModItems.NANO_PROJECTOR.get());
+        basicItem(ModItems.NANO_PROCESSOR.get());
         basicItem(ModItems.SPIRIT_ROD.get());
         basicItem(ModItems.RAW_SPIRIT.get());
         basicItem(ModItems.TIGER_SPIRIT.get());

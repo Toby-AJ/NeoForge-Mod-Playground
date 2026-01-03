@@ -121,6 +121,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', Items.REDSTONE)
                 .unlockedBy("has_void_refinery", has(ModBlocks.VOID_REFINERY)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VOID_ROD.get(), 4)
+                .pattern("   ")
+                .pattern(" R ")
+                .pattern(" R ")
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .unlockedBy("has_void_rod", has(ModItems.VOID_ROD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_MELEE_WEAPON.get())
+                .pattern(" RR")
+                .pattern("RBR")
+                .pattern("VR ")
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .define('V', ModItems.VOID_ROD.get())
+                .define('B', ModItems.BASIC_PROCESSOR.get())
+                .unlockedBy("has_base_melee_weapon", has(ModItems.BASE_MELEE_WEAPON)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_PROJECTILE_WEAPON.get())
+                .pattern("RRR")
+                .pattern("GBR")
+                .pattern("  V")
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .define('V', ModItems.VOID_ROD.get())
+                .define('B', ModItems.BASIC_PROCESSOR.get())
+                .define('G', Items.GUNPOWDER)
+                .unlockedBy("has_base_projectile_weapon", has(ModItems.BASE_PROJECTILE_WEAPON)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_POWER_ARMOUR_HELMET.get())
                 .pattern("RRR")
                 .pattern("R R")
@@ -158,6 +184,37 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.SOUL_SAND)
                 .define('W', Items.STICK)
                 .unlockedBy("has_spirit_rod", has(ModItems.SPIRIT_ROD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.NANO_PROJECTION_CORE.get())
+                .pattern("GPG")
+                .pattern("PAP")
+                .pattern("GPG")
+                .define('A', Items.AMETHYST_SHARD)
+                .define('P', Items.PRISMARINE_CRYSTALS)
+                .define('G', Items.GLASS)
+                .unlockedBy("has_nano_projection_core", has(ModItems.NANO_PROJECTION_CORE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.NANO_PROJECTOR.get())
+                .pattern("GNG")
+                .pattern("RPR")
+                .pattern("GRG")
+                .define('N', ModItems.NANO_PROJECTION_CORE.get())
+                .define('P', ModItems.POWER_CORE.get())
+                .define('R', ModItems.REFINED_VOID_STONE.get())
+                .define('G', Items.GLASS)
+                .unlockedBy("has_nano_projector", has(ModItems.NANO_PROJECTOR)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NANO_FORMER.get())
+                .pattern("CNC")
+                .pattern("PRP")
+                .pattern("BVB")
+                .define('N', ModItems.NANO_PROJECTOR.get())
+                .define('P', ModItems.POWER_CORE.get())
+                .define('V', ModItems.REFINED_VOID_PROCESSOR.get())
+                .define('B', ModBlocks.REFINED_VOID_STONE_BLOCK.get())
+                .define('C', Items.PRISMARINE_CRYSTALS)
+                .define('R', Items.REDSTONE)
+                .unlockedBy("has_nano_former", has(ModBlocks.NANO_FORMER)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.VOID_STONE.get(), 9)
                 .requires(ModBlocks.VOID_STONE_BLOCK)

@@ -34,6 +34,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
         dropSelf(ModBlocks.REFINED_VOID_STONE_BLOCK.get());
         dropSelf(ModBlocks.LIGHTITE_BLOCK.get());
         dropSelf(ModBlocks.VOID_REFINERY.get());
+        dropSelf(ModBlocks.NANO_FORMER.get());
 
         add(ModBlocks.VOID_STONE_ORE.get(),
                 block -> createOreDrop(ModBlocks.VOID_STONE_ORE.get(), ModItems.IMPERFECT_VOID_STONE.get()));

@@ -18,6 +18,10 @@ public class ModBlockEntities
             BLOCK_ENTITIES.register("void_refinery_be", () -> BlockEntityType.Builder.of(
                     VoidRefineryBlockEntity::new, ModBlocks.VOID_REFINERY.get()).build(null));
 
+    public static final Supplier<BlockEntityType<NanoFormerBlockEntity>> NANO_FORMER_BE =
+            BLOCK_ENTITIES.register("nano_former_be", () -> BlockEntityType.Builder.of(
+                    NanoFormerBlockEntity::new, ModBlocks.NANO_FORMER.get()).build(null));
+
     public static void register (IEventBus eventBus)
     {
         BLOCK_ENTITIES.register(eventBus);

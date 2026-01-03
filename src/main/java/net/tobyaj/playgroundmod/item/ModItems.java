@@ -16,6 +16,7 @@ public class ModItems
 {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(PlaygroundMod.MOD_ID);
 
+    //GENERIC
     public static final DeferredItem<Item> IMPERFECT_VOID_STONE = ITEMS.register("imperfect_void_stone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> VOID_STONE = ITEMS.register("void_stone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REFINED_VOID_STONE = ITEMS.register("refined_void_stone", () -> new Item(new Item.Properties()));
@@ -28,6 +29,9 @@ public class ModItems
     public static final DeferredItem<Item> LIGHTITE_PROCESSOR = ITEMS.register("lightite_processor", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> HARDLIGHT_PROJECTION_CORE = ITEMS.register("hardlight_projection_core", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> HARDLIGHT_PROJECTOR = ITEMS.register("hardlight_projector", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VOID_ROD = ITEMS.register("void_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BASE_MELEE_WEAPON = ITEMS.register("base_melee_weapon", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BASE_PROJECTILE_WEAPON = ITEMS.register("base_projectile_weapon", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<ArmorItem> BASE_POWER_ARMOUR_HELMET = ITEMS.register("base_power_armour_helmet",
             () -> new ArmorItem(ModArmourMaterials.REFINED_VOID_STONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
@@ -42,6 +46,12 @@ public class ModItems
             () -> new ArmorItem(ModArmourMaterials.REFINED_VOID_STONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))));
 
+    //STEAMPUNK
+    public static final DeferredItem<Item> NANO_PROJECTION_CORE = ITEMS.register("nano_projection_core", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NANO_PROJECTOR = ITEMS.register("nano_projector", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NANO_PROCESSOR = ITEMS.register("nano_processor", () -> new Item(new Item.Properties()));
+
+    //SPIRIT
     public static final DeferredItem<Item> SPIRIT_ROD = ITEMS.register("spirit_rod", () -> new SpiritRodItem(new Item.Properties()
             .durability(131).attributes(ItemAttributeModifiers.builder()
                     .add(
