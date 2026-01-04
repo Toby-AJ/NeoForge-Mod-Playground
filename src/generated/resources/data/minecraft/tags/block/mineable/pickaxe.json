@@ -7,7 +7,8 @@
     "playgroundmod:lightite_ore",
     "playgroundmod:deepslate_lightite_ore",
     "playgroundmod:lightite_block",
-    "playgroundmod:void_refinery",
+    "playgroundmod:void_infuser",
+    "playgroundmod:void_glass",
     "playgroundmod:nano_former"
   ]
 }

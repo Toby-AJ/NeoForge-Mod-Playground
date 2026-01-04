@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "G": {
-      "item": "minecraft:glass"
+      "item": "playgroundmod:void_glass"
     },
     "H": {
       "item": "playgroundmod:hardlight_projection_core"

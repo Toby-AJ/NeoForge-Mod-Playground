@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "playgroundmod:void_refinery"
+          "name": "playgroundmod:void_glass"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "playgroundmod:blocks/void_refinery"
+  "random_sequence": "playgroundmod:blocks/void_glass"
 }

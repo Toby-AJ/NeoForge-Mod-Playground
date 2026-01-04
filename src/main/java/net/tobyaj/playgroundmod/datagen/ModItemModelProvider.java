@@ -17,6 +17,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.VOID_STONE.get());
         basicItem(ModItems.REFINED_VOID_STONE.get());
         basicItem(ModItems.LIGHTITE.get());
+        basicItem(ModItems.VOIDITE.get());
+        basicItem(ModItems.VOID_PEARL.get());
         basicItem(ModItems.POWER_CORE.get());
         basicItem(ModItems.BASIC_PROCESSOR.get());
         basicItem(ModItems.VOID_PROCESSOR.get());

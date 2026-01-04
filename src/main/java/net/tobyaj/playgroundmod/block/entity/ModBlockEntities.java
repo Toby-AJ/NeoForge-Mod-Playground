@@ -14,9 +14,9 @@ public class ModBlockEntities
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, PlaygroundMod.MOD_ID);
 
-    public static final Supplier<BlockEntityType<VoidRefineryBlockEntity>> VOID_REFINERY_BE =
-            BLOCK_ENTITIES.register("void_refinery_be", () -> BlockEntityType.Builder.of(
-                    VoidRefineryBlockEntity::new, ModBlocks.VOID_REFINERY.get()).build(null));
+    public static final Supplier<BlockEntityType<VoidInfuserBlockEntity>> VOID_INFUSER_BE =
+            BLOCK_ENTITIES.register("void_infuser_be", () -> BlockEntityType.Builder.of(
+                    VoidInfuserBlockEntity::new, ModBlocks.VOID_INFUSER.get()).build(null));
 
     public static final Supplier<BlockEntityType<NanoFormerBlockEntity>> NANO_FORMER_BE =
             BLOCK_ENTITIES.register("nano_former_be", () -> BlockEntityType.Builder.of(

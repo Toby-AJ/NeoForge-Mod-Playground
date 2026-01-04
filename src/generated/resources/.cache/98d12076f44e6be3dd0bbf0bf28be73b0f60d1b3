@@ -1,4 +1,4 @@
-// 1.21	2026-01-03T22:12:19.0081112	Item Models: playgroundmod
+// 1.21	2026-01-04T01:57:21.730056	Item Models: playgroundmod
 3a06ea957cd43467ff8153396ce1f762a3aaf6ec assets/playgroundmod/models/item/armour_nanite.json
 a52c5774d6596c90f9b3c2eb5626c97b07e6aaaa assets/playgroundmod/models/item/base_melee_weapon.json
 18f561a560599f9893b8ec13689c2fb20a59c58f assets/playgroundmod/models/item/base_power_armour_boots.json
@@ -30,6 +30,8 @@ b1fd72af18ed1b452ef6d5941a2758a87858673a assets/playgroundmod/models/item/refine
 c6a8a83672649b4c0fe9d54cf5619f6f1d7f14b5 assets/playgroundmod/models/item/spirit_rod.json
 0c3c4a0be7ae736584f14e8b3e9c6373a4d0178d assets/playgroundmod/models/item/teleport_nanite.json
 a530b1219ce4482f27e01ac3c97e0478b4b1424a assets/playgroundmod/models/item/tiger_spirit.json
+b9833dcf5f78144bcb5a3a975977f50c13b58191 assets/playgroundmod/models/item/voidite.json
+35c8e03b16e8276654787feea8bc3390bbe105d8 assets/playgroundmod/models/item/void_pearl.json
 70b2fd5e7bfc0832dfedfb059009b5f778417669 assets/playgroundmod/models/item/void_processor.json
 b520e3d9d7d54a491fb6fca39096321cdd1a1e36 assets/playgroundmod/models/item/void_rod.json
 0e7fa95a69e4379ae68ff9dfb5f752806a46fcf0 assets/playgroundmod/models/item/void_stone.json

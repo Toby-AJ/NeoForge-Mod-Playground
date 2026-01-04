@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "playgroundmod:void_refinery"
+        "recipe": "playgroundmod:void_pearl"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_void_refinery": {
+    "has_void_pearl": {
       "conditions": {
         "items": [
           {
-            "items": "playgroundmod:void_refinery"
+            "items": "playgroundmod:void_pearl"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_void_refinery"
+      "has_void_pearl"
     ]
   ],
   "rewards": {
     "recipes": [
-      "playgroundmod:void_refinery"
+      "playgroundmod:void_pearl"
     ]
   }
 }

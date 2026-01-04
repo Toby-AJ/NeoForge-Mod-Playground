@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "playgroundmod:block/void_refinery"
+    "all": "playgroundmod:block/void_glass"
   }
 }

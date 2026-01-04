@@ -20,10 +20,10 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.tobyaj.playgroundmod.item.ModItems;
-import net.tobyaj.playgroundmod.screen.custom.VoidRefineryMenu;
+import net.tobyaj.playgroundmod.screen.custom.VoidInfuserMenu;
 import org.jetbrains.annotations.Nullable;
 
-public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
+public class VoidInfuserBlockEntity extends BlockEntity implements MenuProvider
 {
     public final ItemStackHandler itemHandler = new ItemStackHandler(3)
     {
@@ -46,15 +46,15 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
     private int progress = 0;
     private int maxProgress = 400;
 
-    public VoidRefineryBlockEntity(BlockPos pos, BlockState blockState)
+    public VoidInfuserBlockEntity(BlockPos pos, BlockState blockState)
     {
-        super(ModBlockEntities.VOID_REFINERY_BE.get(), pos, blockState);
+        super(ModBlockEntities.VOID_INFUSER_BE.get(), pos, blockState);
         data = new ContainerData() {
             @Override
             public int get(int i) {
                 return switch (i) {
-                    case 0 -> VoidRefineryBlockEntity.this.progress;
-                    case 1 -> VoidRefineryBlockEntity.this.maxProgress;
+                    case 0 -> VoidInfuserBlockEntity.this.progress;
+                    case 1 -> VoidInfuserBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -62,8 +62,8 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
             @Override
             public void set(int i, int value) {
                 switch (i) {
-                    case 0: VoidRefineryBlockEntity.this.progress = value;
-                    case 1: VoidRefineryBlockEntity.this.maxProgress = value;
+                    case 0: VoidInfuserBlockEntity.this.progress = value;
+                    case 1: VoidInfuserBlockEntity.this.maxProgress = value;
                 }
             }
 
@@ -77,13 +77,13 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
     @Override
     public Component getDisplayName()
     {
-        return Component.translatable("block.playgroundmod.void_refinery");
+        return Component.translatable("block.playgroundmod.void_infuser");
     }
 
     @Override
     public @Nullable AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player)
     {
-        return new VoidRefineryMenu(containerId, playerInventory, this, this.data);
+        return new VoidInfuserMenu(containerId, playerInventory, this, this.data);
     }
 
     public void drops()
@@ -100,8 +100,8 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
     @Override
     protected void saveAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
         pTag.put("inventory", itemHandler.serializeNBT(pRegistries));
-        pTag.putInt("void_refinery.progress", progress);
-        pTag.putInt("void_refinery.max_progress", maxProgress);
+        pTag.putInt("void_infuser.progress", progress);
+        pTag.putInt("void_infuser.max_progress", maxProgress);
 
         super.saveAdditional(pTag, pRegistries);
     }
@@ -111,8 +111,8 @@ public class VoidRefineryBlockEntity extends BlockEntity implements MenuProvider
         super.loadAdditional(pTag, pRegistries);
 
         itemHandler.deserializeNBT(pRegistries, pTag.getCompound("inventory"));
-        progress = pTag.getInt("void_refinery.progress");
-        maxProgress = pTag.getInt("void_refinery.max_progress");
+        progress = pTag.getInt("void_infuser.progress");
+        maxProgress = pTag.getInt("void_infuser.max_progress");
     }
 
     public void tick(Level level, BlockPos blockPos, BlockState blockState)

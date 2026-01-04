@@ -10,15 +10,15 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tobyaj.playgroundmod.PlaygroundMod;
 import net.tobyaj.playgroundmod.screen.custom.NanoFormerMenu;
-import net.tobyaj.playgroundmod.screen.custom.VoidRefineryMenu;
+import net.tobyaj.playgroundmod.screen.custom.VoidInfuserMenu;
 
 public class ModMenuTypes
 {
     public static final DeferredRegister<MenuType<?>> MENUS =
             DeferredRegister.create(Registries.MENU, PlaygroundMod.MOD_ID);
 
-    public static final DeferredHolder<MenuType<?>, MenuType<VoidRefineryMenu>> VOID_REFINERY_MENU =
-            registerMenuType("void_refinery_menu", VoidRefineryMenu::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<VoidInfuserMenu>> VOID_INFUSER_MENU =
+            registerMenuType("void_infuser_menu", VoidInfuserMenu::new);
 
     public static final DeferredHolder<MenuType<?>, MenuType<NanoFormerMenu>> NANO_FORMER_MENU =
             registerMenuType("nano_former_menu", NanoFormerMenu::new);

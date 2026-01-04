@@ -27,13 +27,16 @@ public class ModCreativeModeTabs
                       output.accept(ModBlocks.LIGHTITE_ORE);
                       output.accept(ModBlocks.DEEPSLATE_LIGHTITE_ORE);
                       output.accept(ModBlocks.LIGHTITE_BLOCK);
-                      output.accept(ModBlocks.VOID_REFINERY.get());
+                      output.accept(ModBlocks.VOID_INFUSER.get());
+                      output.accept(ModBlocks.VOID_GLASS);
                       output.accept(ModBlocks.NANO_FORMER.get());
 
                       output.accept(ModItems.IMPERFECT_VOID_STONE);
                       output.accept(ModItems.VOID_STONE);
                       output.accept(ModItems.REFINED_VOID_STONE);
                       output.accept(ModItems.LIGHTITE);
+                      output.accept(ModItems.VOIDITE);
+                      output.accept(ModItems.VOID_PEARL);
                       output.accept(ModItems.POWER_CORE);
                       output.accept(ModItems.BASIC_PROCESSOR);
                       output.accept(ModItems.VOID_PROCESSOR);

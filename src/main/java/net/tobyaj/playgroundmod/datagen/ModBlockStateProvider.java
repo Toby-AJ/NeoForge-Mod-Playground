@@ -21,7 +21,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LIGHTITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_LIGHTITE_ORE);
         blockWithItem(ModBlocks.LIGHTITE_BLOCK);
-        blockWithItem(ModBlocks.VOID_REFINERY);
+        blockWithItem(ModBlocks.VOID_INFUSER);
+        blockWithItem(ModBlocks.VOID_GLASS);
         blockWithItem(ModBlocks.NANO_FORMER);
     }
 

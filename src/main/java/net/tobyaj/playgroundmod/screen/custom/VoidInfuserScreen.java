@@ -9,14 +9,14 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 
-public class VoidRefineryScreen extends AbstractContainerScreen<VoidRefineryMenu>
+public class VoidInfuserScreen extends AbstractContainerScreen<VoidInfuserMenu>
 {
     private static final ResourceLocation GUI_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(PlaygroundMod.MOD_ID,"textures/gui/void_refinery/void_refinery_gui.png");
+            ResourceLocation.fromNamespaceAndPath(PlaygroundMod.MOD_ID,"textures/gui/void_infuser/void_infuser_gui.png");
     private static final ResourceLocation ARROW_TEXTURE =
             ResourceLocation.fromNamespaceAndPath(PlaygroundMod.MOD_ID,"textures/gui/arrow_progress.png");
 
-    public VoidRefineryScreen(VoidRefineryMenu menu, Inventory playerInventory, Component title) {
+    public VoidInfuserScreen(VoidInfuserMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
     }
 

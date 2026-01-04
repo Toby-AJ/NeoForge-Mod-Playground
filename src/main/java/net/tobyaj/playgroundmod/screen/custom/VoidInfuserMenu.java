@@ -9,24 +9,24 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.tobyaj.playgroundmod.block.ModBlocks;
-import net.tobyaj.playgroundmod.block.entity.VoidRefineryBlockEntity;
+import net.tobyaj.playgroundmod.block.entity.VoidInfuserBlockEntity;
 import net.tobyaj.playgroundmod.screen.ModMenuTypes;
 
-public class VoidRefineryMenu extends AbstractContainerMenu
+public class VoidInfuserMenu extends AbstractContainerMenu
 {
-    public final VoidRefineryBlockEntity blockEntity;
+    public final VoidInfuserBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
-    public VoidRefineryMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData)
+    public VoidInfuserMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData)
     {
         this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
 
-    public VoidRefineryMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data)
+    public VoidInfuserMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data)
     {
-        super(ModMenuTypes.VOID_REFINERY_MENU.get(), pContainerId);
-        this.blockEntity = ((VoidRefineryBlockEntity) entity);
+        super(ModMenuTypes.VOID_INFUSER_MENU.get(), pContainerId);
+        this.blockEntity = ((VoidInfuserBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
 
@@ -113,7 +113,7 @@ public class VoidRefineryMenu extends AbstractContainerMenu
     public boolean stillValid(Player player)
     {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                player, ModBlocks.VOID_REFINERY.get());
+                player, ModBlocks.VOID_INFUSER.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory)

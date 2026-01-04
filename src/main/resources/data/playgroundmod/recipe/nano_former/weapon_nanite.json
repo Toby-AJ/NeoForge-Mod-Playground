@@ -12,8 +12,8 @@
     "P": { "item": "playgroundmod:base_projectile_weapon" },
     "M": { "item": "playgroundmod:base_melee_weapon" },
     "V": { "item": "playgroundmod:refined_void_stone" },
+    "G": { "item": "playgroundmod:void_glass" },
     "A": { "item": "minecraft:amethyst_shard" },
-    "G": { "item": "minecraft:glass" },
     "C": { "item": "minecraft:prismarine_crystals" },
     "R": { "item": "minecraft:redstone" }
   },

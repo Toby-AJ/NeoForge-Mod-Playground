@@ -18,14 +18,14 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.tobyaj.playgroundmod.block.entity.ModBlockEntities;
-import net.tobyaj.playgroundmod.block.entity.VoidRefineryBlockEntity;
+import net.tobyaj.playgroundmod.block.entity.VoidInfuserBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
-public class VoidRefineryBlock extends BaseEntityBlock
+public class VoidInfuserBlock extends BaseEntityBlock
 {
-    public static final MapCodec<VoidRefineryBlock> CODEC = simpleCodec(VoidRefineryBlock::new);
+    public static final MapCodec<VoidInfuserBlock> CODEC = simpleCodec(VoidInfuserBlock::new);
 
-    public VoidRefineryBlock(Properties properties)
+    public VoidInfuserBlock(Properties properties)
     {
         super(properties);
     }
@@ -39,7 +39,7 @@ public class VoidRefineryBlock extends BaseEntityBlock
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos pos, BlockState state)
     {
-        return new VoidRefineryBlockEntity(pos, state);
+        return new VoidInfuserBlockEntity(pos, state);
     }
 
     @Override
@@ -54,9 +54,9 @@ public class VoidRefineryBlock extends BaseEntityBlock
         if (pState.getBlock() != pNewState.getBlock())
         {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof VoidRefineryBlockEntity voidRefineryBlockEntity)
+            if (blockEntity instanceof VoidInfuserBlockEntity voidInfuserBlockEntity)
             {
-                voidRefineryBlockEntity.drops();
+                voidInfuserBlockEntity.drops();
             }
         }
 
@@ -70,9 +70,9 @@ public class VoidRefineryBlock extends BaseEntityBlock
         if (!pLevel.isClientSide())
         {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof VoidRefineryBlockEntity voidRefineryBlockEntity)
+            if(entity instanceof VoidInfuserBlockEntity voidInfuserBlockEntity)
             {
-                ((ServerPlayer) pPlayer).openMenu(new SimpleMenuProvider(voidRefineryBlockEntity, Component.literal("Void Refinery")), pPos);
+                ((ServerPlayer) pPlayer).openMenu(new SimpleMenuProvider(voidInfuserBlockEntity, Component.translatable("block.playgroundmod.void_infuser")), pPos);
             } else
             {
                 throw new IllegalStateException("Our Container provider is missing!");
@@ -91,7 +91,7 @@ public class VoidRefineryBlock extends BaseEntityBlock
             return null;
         }
 
-        return createTickerHelper(blockEntityType, ModBlockEntities.VOID_REFINERY_BE.get(),
+        return createTickerHelper(blockEntityType, ModBlockEntities.VOID_INFUSER_BE.get(),
                 (level1, blockPos, blockState, blockEntity) -> blockEntity.tick(level1, blockPos, blockState));
     }
 }

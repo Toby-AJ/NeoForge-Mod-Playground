@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tobyaj.playgroundmod.PlaygroundMod;
 import net.tobyaj.playgroundmod.block.custom.NanoFormerBlock;
-import net.tobyaj.playgroundmod.block.custom.VoidRefineryBlock;
+import net.tobyaj.playgroundmod.block.custom.VoidInfuserBlock;
 import net.tobyaj.playgroundmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -50,9 +50,13 @@ public class ModBlocks
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CHAIN)));
 
-    public static final DeferredBlock<Block> VOID_REFINERY = registerBlock("void_refinery",
-            () -> new VoidRefineryBlock(BlockBehaviour.Properties.of().strength(3f)
+    public static final DeferredBlock<Block> VOID_INFUSER = registerBlock("void_infuser",
+            () -> new VoidInfuserBlock(BlockBehaviour.Properties.of().strength(3f)
                     .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> VOID_GLASS = registerBlock("void_glass",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).noOcclusion().requiresCorrectToolForDrops().sound(SoundType.GLASS)));
 
     //STEAMPUNK
     public static final DeferredBlock<Block> NANO_FORMER = registerBlock("nano_former",

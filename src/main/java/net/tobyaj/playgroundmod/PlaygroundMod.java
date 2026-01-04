@@ -1,5 +1,7 @@
 package net.tobyaj.playgroundmod;
 
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.tobyaj.playgroundmod.block.ModBlocks;
 import net.tobyaj.playgroundmod.block.entity.ModBlockEntities;
@@ -7,7 +9,7 @@ import net.tobyaj.playgroundmod.item.ModItems;
 import net.tobyaj.playgroundmod.recipe.ModRecipes;
 import net.tobyaj.playgroundmod.screen.ModMenuTypes;
 import net.tobyaj.playgroundmod.screen.custom.NanoFormerScreen;
-import net.tobyaj.playgroundmod.screen.custom.VoidRefineryScreen;
+import net.tobyaj.playgroundmod.screen.custom.VoidInfuserScreen;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -86,13 +88,16 @@ public class PlaygroundMod
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            event.enqueueWork(() ->
+            {
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.VOID_GLASS.get(), RenderType.translucent());
+            });
         }
 
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event)
         {
-            event.register(ModMenuTypes.VOID_REFINERY_MENU.get(), VoidRefineryScreen::new);
+            event.register(ModMenuTypes.VOID_INFUSER_MENU.get(), VoidInfuserScreen::new);
             event.register(ModMenuTypes.NANO_FORMER_MENU.get(), NanoFormerScreen::new);
         }
     }

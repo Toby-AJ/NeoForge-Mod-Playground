@@ -21,6 +21,8 @@ public class ModItems
     public static final DeferredItem<Item> VOID_STONE = ITEMS.register("void_stone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REFINED_VOID_STONE = ITEMS.register("refined_void_stone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LIGHTITE = ITEMS.register("lightite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VOIDITE = ITEMS.register("voidite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VOID_PEARL = ITEMS.register("void_pearl", () -> new Item(new Item.Properties().stacksTo(16)));
 
     public static final DeferredItem<Item> POWER_CORE = ITEMS.register("power_core", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BASIC_PROCESSOR = ITEMS.register("basic_processor", () -> new Item(new Item.Properties()));

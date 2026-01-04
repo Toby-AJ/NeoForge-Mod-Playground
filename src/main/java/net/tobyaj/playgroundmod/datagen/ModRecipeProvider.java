@@ -3,7 +3,6 @@ package net.tobyaj.playgroundmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -45,6 +44,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("LLL")
                 .define('L', ModItems.LIGHTITE.get())
                 .unlockedBy("has_lightite", has(ModItems.LIGHTITE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VOID_PEARL.get(), 4)
+                .pattern(" R ")
+                .pattern("RVR")
+                .pattern(" R ")
+                .define('V', ModItems.VOIDITE.get())
+                .define('R', ModItems.REFINED_VOID_STONE)
+                .unlockedBy("has_void_pearl", has(ModItems.VOID_PEARL)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_CORE.get(), 2)
                 .pattern("LCL")
@@ -107,10 +114,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('H', ModItems.HARDLIGHT_PROJECTION_CORE.get())
                 .define('P', ModItems.POWER_CORE.get())
                 .define('R', ModItems.REFINED_VOID_STONE.get())
-                .define('G', Items.GLASS)
+                .define('G', ModBlocks.VOID_GLASS.get())
                 .unlockedBy("has_hardlight_projector", has(ModItems.HARDLIGHT_PROJECTOR)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VOID_REFINERY.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VOID_INFUSER.get())
                 .pattern("VPV")
                 .pattern("CSC")
                 .pattern("VRV")
@@ -119,7 +126,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModBlocks.VOID_STONE_BLOCK.get())
                 .define('V', ModItems.VOID_STONE.get())
                 .define('R', Items.REDSTONE)
-                .unlockedBy("has_void_refinery", has(ModBlocks.VOID_REFINERY)).save(recipeOutput);
+                .unlockedBy("has_void_infuser", has(ModBlocks.VOID_INFUSER)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VOID_ROD.get(), 4)
                 .pattern("   ")
@@ -149,9 +156,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_POWER_ARMOUR_HELMET.get())
                 .pattern("RRR")
-                .pattern("R R")
+                .pattern("RGR")
                 .pattern("   ")
                 .define('R', ModItems.REFINED_VOID_STONE.get())
+                .define('G', ModBlocks.VOID_GLASS.get())
                 .unlockedBy("has_base_power_armour_helmet", has(ModItems.BASE_POWER_ARMOUR_HELMET)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BASE_POWER_ARMOUR_CHESTPLATE.get())
@@ -201,7 +209,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('N', ModItems.NANO_PROJECTION_CORE.get())
                 .define('P', ModItems.POWER_CORE.get())
                 .define('R', ModItems.REFINED_VOID_STONE.get())
-                .define('G', Items.GLASS)
+                .define('G', ModBlocks.VOID_GLASS.get())
                 .unlockedBy("has_nano_projector", has(ModItems.NANO_PROJECTOR)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NANO_FORMER.get())

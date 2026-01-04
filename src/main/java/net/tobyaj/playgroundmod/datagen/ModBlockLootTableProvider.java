@@ -33,7 +33,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
         dropSelf(ModBlocks.VOID_STONE_BLOCK.get());
         dropSelf(ModBlocks.REFINED_VOID_STONE_BLOCK.get());
         dropSelf(ModBlocks.LIGHTITE_BLOCK.get());
-        dropSelf(ModBlocks.VOID_REFINERY.get());
+        dropSelf(ModBlocks.VOID_INFUSER.get());
+        dropSelf(ModBlocks.VOID_GLASS.get());
         dropSelf(ModBlocks.NANO_FORMER.get());
 
         add(ModBlocks.VOID_STONE_ORE.get(),

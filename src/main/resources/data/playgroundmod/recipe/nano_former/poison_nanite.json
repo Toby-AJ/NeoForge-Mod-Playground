@@ -10,7 +10,7 @@
   "key": {
     "N": { "item": "playgroundmod:nano_processor" },
     "V": { "item": "playgroundmod:refined_void_stone" },
-    "G": { "item": "minecraft:glass" },
+    "G": { "item": "playgroundmod:void_glass" },
     "A": { "item": "minecraft:amethyst_shard" },
     "E": { "item": "minecraft:fermented_spider_eye" },
     "P": { "item": "minecraft:splash_potion", "nbt": "{Potion:\"minecraft:poison\"}" },
