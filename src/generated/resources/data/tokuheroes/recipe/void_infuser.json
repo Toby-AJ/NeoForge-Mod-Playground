@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "tokuheroes:power_core"
+    },
+    "P": {
+      "item": "tokuheroes:void_processor"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "tokuheroes:void_stone_block"
+    },
+    "V": {
+      "item": "tokuheroes:void_stone"
+    }
+  },
+  "pattern": [
+    "VPV",
+    "CSC",
+    "VRV"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:void_infuser"
+  }
+}

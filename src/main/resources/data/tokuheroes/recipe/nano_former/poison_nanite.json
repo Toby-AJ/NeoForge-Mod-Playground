@@ -1,0 +1,23 @@
+{
+  "type": "tokuheroes:nano_former",
+  "pattern": [
+    " CGC ",
+    "VGEGV",
+    "VPNPV",
+    "VVPVV",
+    " RRR "
+  ],
+  "key": {
+    "N": { "item": "tokuheroes:nano_processor" },
+    "V": { "item": "tokuheroes:water_void_stone" },
+    "G": { "item": "tokuheroes:void_glass" },
+    "C": { "item": "tokuheroes:water_crystal" },
+    "E": { "item": "minecraft:fermented_spider_eye" },
+    "P": { "item": "minecraft:splash_potion", "nbt": "{Potion:\"minecraft:poison\"}" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "tokuheroes:poison_nanite"
+  }
+}

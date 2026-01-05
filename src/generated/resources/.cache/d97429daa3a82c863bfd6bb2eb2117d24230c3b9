@@ -1,0 +1,4 @@
+// 1.21	2026-01-05T17:58:23.9273901	Tags for minecraft:block mod id tokuheroes
+089cc0aa49a38f88561c79cbbbad9130a0f7b5eb data/minecraft/tags/block/mineable/pickaxe.json
+9b9bc1e24821909c8ac213df08f84c20db041281 data/minecraft/tags/block/needs_diamond_tool.json
+8e3f4d7519885522a4becbcef24823f7a11bc84b data/minecraft/tags/block/needs_iron_tool.json

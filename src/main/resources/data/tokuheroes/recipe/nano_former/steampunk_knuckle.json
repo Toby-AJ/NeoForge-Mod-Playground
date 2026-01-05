@@ -1,0 +1,24 @@
+{
+  "type": "tokuheroes:nano_former",
+  "pattern": [
+    " HHH ",
+    "HPHPH",
+    "HCNCH",
+    "SRGRS",
+    " VVV "
+  ],
+  "key": {
+    "N": { "item": "tokuheroes:nano_processor" },
+    "H": { "item": "tokuheroes:hard_void_stone" },
+    "P": { "item": "tokuheroes:nano_projector" },
+    "C": { "item": "tokuheroes:power_core" },
+    "G": { "item": "tokuheroes:void_glass_dome" },
+    "V": { "item": "tokuheroes:void_rod" },
+    "S": { "item": "tokuheroes:copper_pipe" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:steampunk_knuckle"
+  }
+}

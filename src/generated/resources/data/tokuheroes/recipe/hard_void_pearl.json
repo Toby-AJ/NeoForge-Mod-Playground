@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "V": {
+      "item": "tokuheroes:voidite"
+    }
+  },
+  "pattern": [
+    " O ",
+    "OVO",
+    " O "
+  ],
+  "result": {
+    "count": 4,
+    "id": "tokuheroes:hard_void_pearl"
+  }
+}

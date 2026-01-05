@@ -1,0 +1,22 @@
+{
+  "type": "tokuheroes:nano_former",
+  "pattern": [
+    " FFF ",
+    "VCPCV",
+    "VPNPV",
+    "VVRVV",
+    " FFF "
+  ],
+  "key": {
+    "N": { "item": "tokuheroes:nano_processor" },
+    "V": { "item": "tokuheroes:fire_void_stone" },
+    "F": { "item": "minecraft:fire_charge" },
+    "C": { "item": "tokuheroes:fire_crystal" },
+    "P": { "item": "minecraft:blaze_powder" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "tokuheroes:fire_nanite"
+  }
+}

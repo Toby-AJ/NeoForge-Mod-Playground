@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "L": {
+      "item": "tokuheroes:lightite"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "LCL",
+    "LRL",
+    "LCL"
+  ],
+  "result": {
+    "count": 2,
+    "id": "tokuheroes:power_core"
+  }
+}

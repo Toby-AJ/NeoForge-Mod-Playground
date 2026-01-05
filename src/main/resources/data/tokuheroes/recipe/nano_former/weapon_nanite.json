@@ -1,0 +1,24 @@
+{
+  "type": "tokuheroes:nano_former",
+  "pattern": [
+    " VCV ",
+    "VCHCV",
+    "VPNMV",
+    "VVGVV",
+    " RRR "
+  ],
+  "key": {
+    "N": { "item": "tokuheroes:nano_processor" },
+    "P": { "item": "tokuheroes:base_projectile_weapon" },
+    "M": { "item": "tokuheroes:base_melee_weapon" },
+    "V": { "item": "tokuheroes:hard_void_stone" },
+    "G": { "item": "tokuheroes:void_glass" },
+    "H": { "item": "tokuheroes:hard_crystal" },
+    "C": { "item": "minecraft:prismarine_crystals" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "tokuheroes:weapon_nanite"
+  }
+}

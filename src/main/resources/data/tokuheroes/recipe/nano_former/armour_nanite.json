@@ -1,0 +1,25 @@
+{
+  "type": "tokuheroes:nano_former",
+  "pattern": [
+    " MMM ",
+    "VPHPV",
+    "VCNLV",
+    "VVBVV",
+    " RRR "
+  ],
+  "key": {
+    "N": { "item": "tokuheroes:nano_processor" },
+    "H": { "item": "tokuheroes:base_power_armour_helmet" },
+    "C": { "item": "tokuheroes:base_power_armour_chestplate" },
+    "L": { "item": "tokuheroes:base_power_armour_leggings" },
+    "B": { "item": "tokuheroes:base_power_armour_boots" },
+    "V": { "item": "tokuheroes:hard_void_stone" },
+    "P": { "item": "tokuheroes:nano_projector" },
+    "M": { "item": "minecraft:prismarine_crystals" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "tokuheroes:armour_nanite"
+  }
+}

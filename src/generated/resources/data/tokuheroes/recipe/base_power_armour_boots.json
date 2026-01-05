@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "tokuheroes:refined_void_stone"
+    }
+  },
+  "pattern": [
+    "   ",
+    "R R",
+    "R R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:base_power_armour_boots"
+  }
+}

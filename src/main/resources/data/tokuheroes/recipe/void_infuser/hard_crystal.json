@@ -1,0 +1,10 @@
+{
+  "type": "tokuheroes:void_infuser",
+  "input1": { "item": "tokuheroes:lightite" },
+  "input2": { "item": "tokuheroes:hard_void_pearl" },
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:hard_crystal"
+  },
+  "progress": 400
+}

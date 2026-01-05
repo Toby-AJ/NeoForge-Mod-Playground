@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tokuheroes:block/lightite_block"
+    }
+  }
+}

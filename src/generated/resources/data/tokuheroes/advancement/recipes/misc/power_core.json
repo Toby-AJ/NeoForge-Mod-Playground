@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_power_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tokuheroes:power_core"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tokuheroes:power_core"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_power_core"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tokuheroes:power_core"
+    ]
+  }
+}

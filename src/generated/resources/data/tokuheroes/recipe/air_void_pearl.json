@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "V": {
+      "item": "tokuheroes:voidite"
+    }
+  },
+  "pattern": [
+    " F ",
+    "FVF",
+    " F "
+  ],
+  "result": {
+    "count": 4,
+    "id": "tokuheroes:air_void_pearl"
+  }
+}

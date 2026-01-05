@@ -1,0 +1,22 @@
+{
+  "type": "tokuheroes:nano_former",
+  "pattern": [
+    " III ",
+    "VFFFV",
+    "VINIV",
+    "VVRVV",
+    " GGG "
+  ],
+  "key": {
+    "N": { "item": "tokuheroes:nano_processor" },
+    "V": { "item": "tokuheroes:hard_void_stone" },
+    "I": { "item": "minecraft:iron_ingot" },
+    "F": { "item": "minecraft:flint" },
+    "G": { "item": "minecraft:gunpowder" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "tokuheroes:bullet_nanite"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "tokuheroes:nano_former",
+  "pattern": [
+    " CCC ",
+    "CPRPC",
+    "CRPRC",
+    "CPRPC",
+    " CCC "
+  ],
+  "key": {
+    "P": { "item": "tokuheroes:refined_void_processor" },
+    "R": { "item": "minecraft:redstone" },
+    "C": { "item": "minecraft:copper_ingot" }
+  },
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:nano_processor"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "tokuheroes:basic_processor"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "tokuheroes:lightite"
+    }
+  },
+  "pattern": [
+    "GLG",
+    "LBL",
+    "GLG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:lightite_processor"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tokuheroes:refined_void_stone_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "tokuheroes:refined_void_stone"
+  }
+}

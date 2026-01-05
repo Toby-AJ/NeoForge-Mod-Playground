@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fire_void_pearl": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tokuheroes:fire_void_pearl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tokuheroes:fire_void_pearl"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fire_void_pearl"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tokuheroes:fire_void_pearl"
+    ]
+  }
+}

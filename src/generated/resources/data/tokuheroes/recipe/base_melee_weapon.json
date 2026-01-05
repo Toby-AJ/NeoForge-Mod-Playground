@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "tokuheroes:basic_processor"
+    },
+    "R": {
+      "item": "tokuheroes:refined_void_stone"
+    },
+    "V": {
+      "item": "tokuheroes:void_rod"
+    }
+  },
+  "pattern": [
+    " RR",
+    "RBR",
+    "VR "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:base_melee_weapon"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:dirt"
+    },
+    "V": {
+      "item": "tokuheroes:voidite"
+    }
+  },
+  "pattern": [
+    " D ",
+    "DVD",
+    " D "
+  ],
+  "result": {
+    "count": 4,
+    "id": "tokuheroes:earth_void_pearl"
+  }
+}

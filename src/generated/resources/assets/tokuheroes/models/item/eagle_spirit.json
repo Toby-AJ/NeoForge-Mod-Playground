@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tokuheroes:item/eagle_spirit"
+  }
+}

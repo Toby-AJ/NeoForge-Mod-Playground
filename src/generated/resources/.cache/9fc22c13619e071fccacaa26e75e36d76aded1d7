@@ -1,4 +1,0 @@
-// 1.21	2026-01-04T16:00:19.9084525	Tags for minecraft:block mod id playgroundmod
-efae4c6afe15276e4286b5c10b377eaf1f8bf098 data/minecraft/tags/block/mineable/pickaxe.json
-cafc73b4385273cbd70f202afbc890d5cd51a467 data/minecraft/tags/block/needs_diamond_tool.json
-85548cee5b2e6527096904a27e8d1f2974ff8285 data/minecraft/tags/block/needs_iron_tool.json

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "tokuheroes:void_glass"
+    },
+    "H": {
+      "item": "tokuheroes:hardlight_projection_core"
+    },
+    "P": {
+      "item": "tokuheroes:power_core"
+    },
+    "R": {
+      "item": "tokuheroes:refined_void_stone"
+    }
+  },
+  "pattern": [
+    "GHG",
+    "RPR",
+    "GRG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:hardlight_projector"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "V": {
+      "item": "tokuheroes:voidite"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BVB",
+    " B "
+  ],
+  "result": {
+    "count": 4,
+    "id": "tokuheroes:fire_void_pearl"
+  }
+}

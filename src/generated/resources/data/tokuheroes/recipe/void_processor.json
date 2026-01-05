@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "tokuheroes:basic_processor"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "V": {
+      "item": "tokuheroes:void_stone"
+    }
+  },
+  "pattern": [
+    "GVG",
+    "VBV",
+    "GVG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:void_processor"
+  }
+}

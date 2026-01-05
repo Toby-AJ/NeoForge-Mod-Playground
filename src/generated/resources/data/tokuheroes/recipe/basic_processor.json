@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "L": {
+      "item": "tokuheroes:lightite"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "RCR",
+    "CLC",
+    "RCR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:basic_processor"
+  }
+}

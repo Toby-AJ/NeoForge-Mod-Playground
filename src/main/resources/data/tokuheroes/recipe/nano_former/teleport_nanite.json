@@ -1,0 +1,22 @@
+{
+  "type": "tokuheroes:nano_former",
+  "pattern": [
+    " CCC ",
+    "VPEPV",
+    "VPNPV",
+    "VVPVV",
+    " RRR "
+  ],
+  "key": {
+    "N": { "item": "tokuheroes:nano_processor" },
+    "V": { "item": "tokuheroes:air_void_stone" },
+    "C": { "item": "minecraft:prismarine_crystals" },
+    "E": { "item": "minecraft:ender_eye" },
+    "P": { "item": "minecraft:ender_pearl" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "count": 64,
+    "id": "tokuheroes:teleport_nanite"
+  }
+}

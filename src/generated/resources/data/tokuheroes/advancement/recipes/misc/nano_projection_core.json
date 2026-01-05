@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nano_projection_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tokuheroes:nano_projection_core"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tokuheroes:nano_projection_core"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nano_projection_core"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tokuheroes:nano_projection_core"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "tokuheroes:void_infuser",
+  "input1": { "item": "tokuheroes:refined_void_stone" },
+  "input2": { "item": "tokuheroes:fire_void_pearl" },
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:fire_void_stone"
+  },
+  "progress": 500
+}

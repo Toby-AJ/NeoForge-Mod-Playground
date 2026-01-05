@@ -1,15 +1,15 @@
 {
   "values": [
-    "playgroundmod:void_stone_ore",
-    "playgroundmod:deepslate_void_stone_ore",
-    "playgroundmod:void_stone_block",
-    "playgroundmod:refined_void_stone_block",
-    "playgroundmod:lightite_ore",
-    "playgroundmod:deepslate_lightite_ore",
-    "playgroundmod:lightite_block",
-    "playgroundmod:space_stone",
-    "playgroundmod:void_infuser",
-    "playgroundmod:void_glass",
-    "playgroundmod:nano_former"
+    "tokuheroes:void_stone_ore",
+    "tokuheroes:deepslate_void_stone_ore",
+    "tokuheroes:void_stone_block",
+    "tokuheroes:refined_void_stone_block",
+    "tokuheroes:lightite_ore",
+    "tokuheroes:deepslate_lightite_ore",
+    "tokuheroes:lightite_block",
+    "tokuheroes:space_stone",
+    "tokuheroes:void_infuser",
+    "tokuheroes:void_glass",
+    "tokuheroes:nano_former"
   ]
 }

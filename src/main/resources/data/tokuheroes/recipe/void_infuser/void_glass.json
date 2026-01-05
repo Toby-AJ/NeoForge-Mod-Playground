@@ -1,0 +1,10 @@
+{
+  "type": "tokuheroes:void_infuser",
+  "input1": { "item": "minecraft:glass" },
+  "input2": { "item": "tokuheroes:void_pearl" },
+  "result": {
+    "count": 1,
+    "id": "tokuheroes:void_glass"
+  },
+  "progress": 300
+}

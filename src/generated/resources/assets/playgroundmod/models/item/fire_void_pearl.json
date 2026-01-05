@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "playgroundmod:item/fire_void_pearl"
-  }
-}
