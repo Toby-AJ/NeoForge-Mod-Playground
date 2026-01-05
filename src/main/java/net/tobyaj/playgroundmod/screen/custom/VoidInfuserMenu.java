@@ -5,11 +5,13 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.tobyaj.playgroundmod.block.ModBlocks;
 import net.tobyaj.playgroundmod.block.entity.VoidInfuserBlockEntity;
+import net.tobyaj.playgroundmod.item.ModItems;
 import net.tobyaj.playgroundmod.screen.ModMenuTypes;
 
 public class VoidInfuserMenu extends AbstractContainerMenu
@@ -37,8 +39,22 @@ public class VoidInfuserMenu extends AbstractContainerMenu
         //this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 104, 34));
 
         this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 54, 20)); // Void Stone
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 54, 48)); // Ender Pearl
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 2, 104, 34)); // Output
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 54, 48) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                // Only allow Ender Pearl, Fire Pearl, or Void Pearl
+                return stack.getItem() == Items.ENDER_PEARL
+                        || stack.getItem() == ModItems.VOID_PEARL.get() || stack.getItem() == ModItems.HARD_VOID_PEARL.get()
+                        || stack.getItem() == ModItems.FIRE_VOID_PEARL.get() || stack.getItem() == ModItems.WATER_VOID_PEARL.get()
+                        || stack.getItem() == ModItems.EARTH_VOID_PEARL.get() || stack.getItem() == ModItems.AIR_VOID_PEARL.get();
+            }
+        }); // Pearls
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 2, 104, 34) {
+            @Override
+            public boolean mayPlace(ItemStack stack) {
+                return false;
+            }
+        }); // Output
 
         addDataSlots(data);
     }

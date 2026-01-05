@@ -6,6 +6,8 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.tobyaj.playgroundmod.PlaygroundMod;
 import net.tobyaj.playgroundmod.block.ModBlocks;
@@ -50,8 +52,55 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("RVR")
                 .pattern(" R ")
                 .define('V', ModItems.VOIDITE.get())
-                .define('R', ModItems.REFINED_VOID_STONE)
+                .define('R', ModItems.REFINED_VOID_STONE.get())
                 .unlockedBy("has_void_pearl", has(ModItems.VOID_PEARL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HARD_VOID_PEARL.get(), 4)
+                .pattern(" O ")
+                .pattern("OVO")
+                .pattern(" O ")
+                .define('V', ModItems.VOIDITE.get())
+                .define('O', Blocks.OBSIDIAN)
+                .unlockedBy("has_hard_void_pearl", has(ModItems.HARD_VOID_PEARL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_VOID_PEARL.get(), 4)
+                .pattern(" B ")
+                .pattern("BVB")
+                .pattern(" B ")
+                .define('V', ModItems.VOIDITE.get())
+                .define('B', Items.BLAZE_POWDER)
+                .unlockedBy("has_fire_void_pearl", has(ModItems.FIRE_VOID_PEARL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WATER_VOID_PEARL.get(), 4)
+                .pattern(" W ")
+                .pattern("WVW")
+                .pattern(" W ")
+                .define('V', ModItems.VOIDITE.get())
+                .define('W', Items.WATER_BUCKET)
+                .unlockedBy("has_water_void_pearl", has(ModItems.WATER_VOID_PEARL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARTH_VOID_PEARL.get(), 4)
+                .pattern(" D ")
+                .pattern("DVD")
+                .pattern(" D ")
+                .define('V', ModItems.VOIDITE.get())
+                .define('D', Blocks.DIRT)
+                .unlockedBy("has_earth_void_pearl", has(ModItems.EARTH_VOID_PEARL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AIR_VOID_PEARL.get(), 4)
+                .pattern(" F ")
+                .pattern("FVF")
+                .pattern(" F ")
+                .define('V', ModItems.VOIDITE.get())
+                .define('F', Items.FEATHER)
+                .unlockedBy("has_air_void_pearl", has(ModItems.AIR_VOID_PEARL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VOID_GLASS_DOME.get(), 3)
+                .pattern(" G ")
+                .pattern("G G")
+                .pattern("   ")
+                .define('G', ModBlocks.VOID_GLASS.get())
+                .unlockedBy("has_void_glass_dome", has(ModItems.VOID_GLASS_DOME)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.POWER_CORE.get(), 2)
                 .pattern("LCL")
@@ -211,6 +260,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', ModItems.REFINED_VOID_STONE.get())
                 .define('G', ModBlocks.VOID_GLASS.get())
                 .unlockedBy("has_nano_projector", has(ModItems.NANO_PROJECTOR)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_PIPE.get(), 2)
+                .pattern("   ")
+                .pattern(" CC")
+                .pattern("CC ")
+                .define('C', Items.COPPER_INGOT)
+                .unlockedBy("has_copper_pipe", has(ModItems.COPPER_PIPE)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NANO_FORMER.get())
                 .pattern("CNC")

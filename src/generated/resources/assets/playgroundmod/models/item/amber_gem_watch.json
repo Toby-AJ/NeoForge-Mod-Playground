@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "playgroundmod:item/amber_gem_watch"
+  }
+}

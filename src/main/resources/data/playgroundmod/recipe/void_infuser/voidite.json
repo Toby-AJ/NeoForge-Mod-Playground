@@ -1,0 +1,10 @@
+{
+  "type": "playgroundmod:void_infuser",
+  "input1": { "item": "playgroundmod:lightite" },
+  "input2": { "item": "minecraft:ender_pearl" },
+  "result": {
+    "count": 1,
+    "id": "playgroundmod:voidite"
+  },
+  "progress": 300
+}

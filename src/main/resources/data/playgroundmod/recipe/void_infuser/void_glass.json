@@ -1,0 +1,10 @@
+{
+  "type": "playgroundmod:void_infuser",
+  "input1": { "item": "minecraft:glass" },
+  "input2": { "item": "playgroundmod:void_pearl" },
+  "result": {
+    "count": 1,
+    "id": "playgroundmod:void_glass"
+  },
+  "progress": 300
+}

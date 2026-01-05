@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "V": {
+      "item": "playgroundmod:voidite"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WVW",
+    " W "
+  ],
+  "result": {
+    "count": 4,
+    "id": "playgroundmod:water_void_pearl"
+  }
+}

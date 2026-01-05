@@ -48,7 +48,11 @@ public class ModBlocks
 
     public static final DeferredBlock<Block> LIGHTITE_BLOCK = registerBlock("lightite_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CHAIN)));
+                    .strength(4f).requiresCorrectToolForDrops().lightLevel(state -> 15).sound(SoundType.CHAIN)));
+
+    public static final DeferredBlock<Block> SPACE_STONE = registerBlock("space_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> VOID_INFUSER = registerBlock("void_infuser",
             () -> new VoidInfuserBlock(BlockBehaviour.Properties.of().strength(3f)
@@ -56,7 +60,10 @@ public class ModBlocks
 
     public static final DeferredBlock<Block> VOID_GLASS = registerBlock("void_glass",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).noOcclusion().requiresCorrectToolForDrops().sound(SoundType.GLASS)));
+                    .strength(1f).noOcclusion().lightLevel(state -> 0)
+                    .isViewBlocking((state, level, pos) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .requiresCorrectToolForDrops().sound(SoundType.GLASS)));
 
     //STEAMPUNK
     public static final DeferredBlock<Block> NANO_FORMER = registerBlock("nano_former",

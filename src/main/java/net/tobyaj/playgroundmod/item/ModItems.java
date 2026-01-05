@@ -20,10 +20,28 @@ public class ModItems
     public static final DeferredItem<Item> IMPERFECT_VOID_STONE = ITEMS.register("imperfect_void_stone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> VOID_STONE = ITEMS.register("void_stone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REFINED_VOID_STONE = ITEMS.register("refined_void_stone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HARD_VOID_STONE = ITEMS.register("hard_void_stone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FIRE_VOID_STONE = ITEMS.register("fire_void_stone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> WATER_VOID_STONE = ITEMS.register("water_void_stone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EARTH_VOID_STONE = ITEMS.register("earth_void_stone", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AIR_VOID_STONE = ITEMS.register("air_void_stone", () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> LIGHTITE = ITEMS.register("lightite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> VOIDITE = ITEMS.register("voidite", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> VOID_PEARL = ITEMS.register("void_pearl", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> HARD_CRYSTAL = ITEMS.register("hard_crystal", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FIRE_CRYSTAL = ITEMS.register("fire_crystal", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> WATER_CRYSTAL = ITEMS.register("water_crystal", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EARTH_CRYSTAL = ITEMS.register("earth_crystal", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AIR_CRYSTAL = ITEMS.register("air_crystal", () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> VOID_PEARL = ITEMS.register("void_pearl", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> HARD_VOID_PEARL = ITEMS.register("hard_void_pearl", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> FIRE_VOID_PEARL = ITEMS.register("fire_void_pearl", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> WATER_VOID_PEARL = ITEMS.register("water_void_pearl", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> EARTH_VOID_PEARL = ITEMS.register("earth_void_pearl", () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> AIR_VOID_PEARL = ITEMS.register("air_void_pearl", () -> new Item(new Item.Properties().stacksTo(16)));
+
+    public static final DeferredItem<Item> VOID_GLASS_DOME = ITEMS.register("void_glass_dome", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POWER_CORE = ITEMS.register("power_core", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BASIC_PROCESSOR = ITEMS.register("basic_processor", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> VOID_PROCESSOR = ITEMS.register("void_processor", () -> new Item(new Item.Properties()));
@@ -49,9 +67,16 @@ public class ModItems
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))));
 
     //STEAMPUNK
+    public static final DeferredItem<Item> RUBY_GEM_WATCH = ITEMS.register("ruby_gem_watch", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AMETHYST_GEM_WATCH = ITEMS.register("amethyst_gem_watch", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> QUARTZ_GEM_WATCH = ITEMS.register("quartz_gem_watch", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AMBER_GEM_WATCH = ITEMS.register("amber_gem_watch", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EMERALD_GEM_WATCH = ITEMS.register("emerald_gem_watch", () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> NANO_PROJECTION_CORE = ITEMS.register("nano_projection_core", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NANO_PROJECTOR = ITEMS.register("nano_projector", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NANO_PROCESSOR = ITEMS.register("nano_processor", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COPPER_PIPE = ITEMS.register("copper_pipe", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ARMOUR_NANITE = ITEMS.register("armour_nanite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> WEAPON_NANITE = ITEMS.register("weapon_nanite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BULLET_NANITE = ITEMS.register("bullet_nanite", () -> new Item(new Item.Properties()));
@@ -59,6 +84,7 @@ public class ModItems
     public static final DeferredItem<Item> TELEPORT_NANITE = ITEMS.register("teleport_nanite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POISON_NANITE = ITEMS.register("poison_nanite", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> EXPLODE_NANITE = ITEMS.register("explode_nanite", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEAMPUNK_KNUCKLE = ITEMS.register("steampunk_knuckle", () -> new Item(new Item.Properties()));
 
     //SPIRIT
     public static final DeferredItem<Item> SPIRIT_ROD = ITEMS.register("spirit_rod", () -> new SpiritRodItem(new Item.Properties()

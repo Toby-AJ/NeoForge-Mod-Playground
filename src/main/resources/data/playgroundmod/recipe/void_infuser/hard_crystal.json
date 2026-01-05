@@ -1,0 +1,10 @@
+{
+  "type": "playgroundmod:void_infuser",
+  "input1": { "item": "playgroundmod:lightite" },
+  "input2": { "item": "playgroundmod:hard_void_pearl" },
+  "result": {
+    "count": 1,
+    "id": "playgroundmod:hard_crystal"
+  },
+  "progress": 400
+}

@@ -1,0 +1,10 @@
+{
+  "type": "playgroundmod:void_infuser",
+  "input1": { "item": "playgroundmod:refined_void_stone" },
+  "input2": { "item": "playgroundmod:air_void_pearl" },
+  "result": {
+    "count": 1,
+    "id": "playgroundmod:air_void_stone"
+  },
+  "progress": 500
+}

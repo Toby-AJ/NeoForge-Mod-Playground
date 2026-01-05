@@ -26,13 +26,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LIGHTITE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_LIGHTITE_ORE.get())
                 .add(ModBlocks.LIGHTITE_BLOCK.get())
+                .add(ModBlocks.SPACE_STONE.get())
                 .add(ModBlocks.VOID_INFUSER.get())
                 .add(ModBlocks.VOID_GLASS.get())
                 .add(ModBlocks.NANO_FORMER.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.LIGHTITE_ORE.get())
-                .add(ModBlocks.LIGHTITE_BLOCK.get());
+                .add(ModBlocks.LIGHTITE_BLOCK.get())
+                .add(ModBlocks.SPACE_STONE.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.VOID_STONE_ORE.get())

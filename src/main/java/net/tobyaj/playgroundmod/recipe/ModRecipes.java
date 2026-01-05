@@ -27,6 +27,17 @@ public class ModRecipes {
                 }
             });
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<VoidInfuserRecipe>> VOID_INFUSER_SERIALIZER =
+            SERIALIZERS.register("void_infuser", VoidInfuserRecipe.Serializer::new);
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<VoidInfuserRecipe>> VOID_INFUSER_TYPE =
+            TYPES.register("void_infuser", () -> new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return "void_infuser";
+                }
+            });
+
     public static void register(IEventBus eventBus)
     {
         SERIALIZERS.register(eventBus);

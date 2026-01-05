@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "V": {
+      "item": "playgroundmod:voidite"
+    }
+  },
+  "pattern": [
+    " F ",
+    "FVF",
+    " F "
+  ],
+  "result": {
+    "count": 4,
+    "id": "playgroundmod:air_void_pearl"
+  }
+}

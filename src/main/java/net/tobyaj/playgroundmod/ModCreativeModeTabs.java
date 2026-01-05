@@ -27,6 +27,7 @@ public class ModCreativeModeTabs
                       output.accept(ModBlocks.LIGHTITE_ORE);
                       output.accept(ModBlocks.DEEPSLATE_LIGHTITE_ORE);
                       output.accept(ModBlocks.LIGHTITE_BLOCK);
+                      output.accept(ModBlocks.SPACE_STONE);
                       output.accept(ModBlocks.VOID_INFUSER.get());
                       output.accept(ModBlocks.VOID_GLASS);
                       output.accept(ModBlocks.NANO_FORMER.get());
@@ -34,9 +35,28 @@ public class ModCreativeModeTabs
                       output.accept(ModItems.IMPERFECT_VOID_STONE);
                       output.accept(ModItems.VOID_STONE);
                       output.accept(ModItems.REFINED_VOID_STONE);
+                      output.accept(ModItems.HARD_VOID_STONE);
+                      output.accept(ModItems.FIRE_VOID_STONE);
+                      output.accept(ModItems.WATER_VOID_STONE);
+                      output.accept(ModItems.EARTH_VOID_STONE);
+                      output.accept(ModItems.AIR_VOID_STONE);
+
                       output.accept(ModItems.LIGHTITE);
                       output.accept(ModItems.VOIDITE);
+                      output.accept(ModItems.HARD_CRYSTAL);
+                      output.accept(ModItems.FIRE_CRYSTAL);
+                      output.accept(ModItems.WATER_CRYSTAL);
+                      output.accept(ModItems.EARTH_CRYSTAL);
+                      output.accept(ModItems.AIR_CRYSTAL);
+
                       output.accept(ModItems.VOID_PEARL);
+                      output.accept(ModItems.HARD_VOID_PEARL);
+                      output.accept(ModItems.FIRE_VOID_PEARL);
+                      output.accept(ModItems.WATER_VOID_PEARL);
+                      output.accept(ModItems.EARTH_VOID_PEARL);
+                      output.accept(ModItems.AIR_VOID_PEARL);
+
+                      output.accept(ModItems.VOID_GLASS_DOME);
                       output.accept(ModItems.POWER_CORE);
                       output.accept(ModItems.BASIC_PROCESSOR);
                       output.accept(ModItems.VOID_PROCESSOR);
@@ -54,9 +74,15 @@ public class ModCreativeModeTabs
                       output.accept((ModItems.BASE_POWER_ARMOUR_LEGGINGS));
                       output.accept((ModItems.BASE_POWER_ARMOUR_BOOTS));
 
+                      output.accept(ModItems.RUBY_GEM_WATCH);
+                      output.accept(ModItems.AMETHYST_GEM_WATCH);
+                      output.accept(ModItems.QUARTZ_GEM_WATCH);
+                      output.accept(ModItems.AMBER_GEM_WATCH);
+                      output.accept(ModItems.EMERALD_GEM_WATCH);
                       output.accept(ModItems.NANO_PROJECTION_CORE);
                       output.accept(ModItems.NANO_PROJECTOR);
                       output.accept(ModItems.NANO_PROCESSOR);
+                      output.accept(ModItems.COPPER_PIPE);
                       output.accept(ModItems.ARMOUR_NANITE);
                       output.accept(ModItems.WEAPON_NANITE);
                       output.accept(ModItems.BULLET_NANITE);
@@ -64,6 +90,7 @@ public class ModCreativeModeTabs
                       output.accept(ModItems.TELEPORT_NANITE);
                       output.accept(ModItems.POISON_NANITE);
                       output.accept(ModItems.EXPLODE_NANITE);
+                      output.accept(ModItems.STEAMPUNK_KNUCKLE);
 
                       output.accept(ModItems.SPIRIT_ROD);
                       output.accept(ModItems.RAW_SPIRIT);

@@ -14,7 +14,7 @@
     "L": { "item": "playgroundmod:base_power_armour_leggings" },
     "B": { "item": "playgroundmod:base_power_armour_boots" },
     "V": { "item": "playgroundmod:refined_void_stone" },
-    "P": { "item": "playgroundmod:hardlight_projector" },
+    "P": { "item": "playgroundmod:nano_projector" },
     "M": { "item": "minecraft:prismarine_crystals" },
     "R": { "item": "minecraft:redstone" }
   },

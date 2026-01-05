@@ -13,7 +13,9 @@ import net.tobyaj.playgroundmod.PlaygroundMod;
 import net.tobyaj.playgroundmod.block.ModBlocks;
 import net.tobyaj.playgroundmod.recipe.ModRecipes;
 import net.tobyaj.playgroundmod.recipe.NanoFormerRecipe;
+import net.tobyaj.playgroundmod.recipe.VoidInfuserRecipe;
 import net.tobyaj.playgroundmod.screen.custom.NanoFormerScreen;
+import net.tobyaj.playgroundmod.screen.custom.VoidInfuserScreen;
 
 import java.util.List;
 
@@ -29,6 +31,7 @@ public class JEIPlaygroundModPlugin implements IModPlugin
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration)
     {
+        registration.addRecipeCategories(new VoidInfuserRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new NanoFormerRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
@@ -36,6 +39,17 @@ public class JEIPlaygroundModPlugin implements IModPlugin
     public void registerRecipes(IRecipeRegistration registration)
     {
         RecipeManager recipeManager = Minecraft.getInstance().level.getRecipeManager();
+
+        List<VoidInfuserRecipe> voidInfuserRecipes =
+                recipeManager.getAllRecipesFor(ModRecipes.VOID_INFUSER_TYPE.get())
+                        .stream()
+                        .map(RecipeHolder::value)
+                        .toList();
+
+        registration.addRecipes(
+                VoidInfuserRecipeCategory.VOID_INFUSER_RECIPE_RECIPE_TYPE,
+                voidInfuserRecipes
+        );
 
         List<NanoFormerRecipe> nanoFormerRecipes =
                 recipeManager.getAllRecipesFor(ModRecipes.NANO_FORMER_TYPE.get())
@@ -52,12 +66,15 @@ public class JEIPlaygroundModPlugin implements IModPlugin
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration)
     {
+        registration.addGuiContainerHandler(VoidInfuserScreen.class,new IGuiContainerHandler<VoidInfuserScreen>() {});
         registration.addGuiContainerHandler(NanoFormerScreen.class,new IGuiContainerHandler<NanoFormerScreen>() {});
     }
 
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration)
     {
+        registration.addRecipeCatalyst(new ItemStack(ModBlocks.VOID_INFUSER.get().asItem()),
+                VoidInfuserRecipeCategory.VOID_INFUSER_RECIPE_RECIPE_TYPE);
         registration.addRecipeCatalyst(new ItemStack(ModBlocks.NANO_FORMER.get().asItem()),
                 NanoFormerRecipeCategory.NANO_FORMER_RECIPE_RECIPE_TYPE);
     }
